@@ -1,0 +1,10 @@
+.footer {
+  background: rgb(17, 17, 17);
+  color: white;
+  height: 300px;
+  width: 100vw;
+}
+
+.footer-inner {
+  padding: 40px 60px;
+}

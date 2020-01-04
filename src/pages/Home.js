@@ -17,6 +17,7 @@ class Home extends Component {
           {/* Music */}
           <div className="col-sm-12 col-md-4">
             <Photo
+              link={"/music"}
               image={Steve}
               style={photoStyle}
               title={"Music"}
@@ -26,18 +27,20 @@ class Home extends Component {
           {/* Events */}
           <div className="col-sm-12 col-md-4">
             <Photo
+              link={"/events"}
               image={Steve}
               style={photoStyle}
               title={"Events"}
               description={"Past and upcoming events featuring Steve."}
             />
           </div>
-          {/* About */}
+          {/* Gallery */}
           <div className="col-sm-12 col-md-4">
             <Photo
+              link={"/gallery"}
               image={Steve}
               style={photoStyle}
-              title={"About"}
+              title={"Gallery"}
               description={"About Steve and his music."}
             />
           </div>

@@ -3,13 +3,13 @@ import "./photo.css";
 
 class Photo extends Component {
   render() {
-    const { image, title, description } = this.props;
+    const { image, title, description, link } = this.props;
     return (
-      <div className="photo">
+      <a href={link} className="photo">
         <img src={image} style={this.props.style} />
         <p className="photoTitle">{title}</p>
         <p className="photoDescription">{description}</p>
-      </div>
+      </a>
     );
   }
 }
