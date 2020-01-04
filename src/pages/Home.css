@@ -10,10 +10,15 @@
 
 .home-container {
   font-family: "Cabin", "sans-serif";
+  max-width: 100% !important;
+  padding: 40px 60px !important;
 }
 
-.my-row {
-  border: 1px dotted black;
+hr {
+  background: #303030;
+}
+
+.row-style {
   height: auto;
   position: relative;
 }
@@ -30,4 +35,10 @@
   font-weight: 400;
   letter-spacing: 3px;
   line-height: 1.2em;
+}
+
+@media only screen and (max-width: 768px) {
+  .home-container {
+    padding: 35px 20px !important;
+  }
 }

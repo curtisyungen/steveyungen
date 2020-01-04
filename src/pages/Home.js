@@ -25,7 +25,7 @@ class Home extends Component {
   render() {
     return (
       <div className="container home-container">
-        <div className="row my-row justify-content-center text-center">
+        <div className="row row-style justify-content-center text-center">
           <div className="spacer" />
           {/* Music */}
           <div className="col-sm-12 col-md-4">
@@ -59,10 +59,10 @@ class Home extends Component {
           </div>
         </div>
 
-        <div className="row my-row justify-content-center text-center">
+        <div className="row row-style justify-content-center text-center">
           <div className="spacer" />
           <p className="col-md-12 title">FIND STEVE ONLINE</p>
-          <div className="col-md-4">
+          <div className="col-md-2">
             <Photo
               image={SoundCloudLogo}
               style={logoStyle}
@@ -70,7 +70,7 @@ class Home extends Component {
               target="_blank"
             />
           </div>
-          <div className="col-md-4">
+          <div className="col-md-2">
             <Photo
               image={YouTubeLogo}
               style={logoStyle}
@@ -78,7 +78,7 @@ class Home extends Component {
               target="_blank"
             />
           </div>
-          <div className="col-md-4">
+          <div className="col-md-2">
             <Photo
               image={FacebookLogo}
               style={logoStyle}
@@ -88,7 +88,10 @@ class Home extends Component {
           </div>
         </div>
 
-        <div className="row my-row justify-content-center text-center">
+        <hr />
+
+        <div className="row row-style justify-content-center text-center">
+          <div className="spacer" />
           <div className="col-md-12">Row 3 Col 1</div>
         </div>
       </div>
