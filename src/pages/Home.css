@@ -18,6 +18,10 @@ hr {
   background: #303030;
 }
 
+.large-title {
+  font-size: 44px !important;
+}
+
 .row-style {
   height: auto;
   position: relative;
@@ -35,6 +39,7 @@ hr {
   font-weight: 400;
   letter-spacing: 3px;
   line-height: 1.2em;
+  width: 100%;
 }
 
 .welcomeNote {

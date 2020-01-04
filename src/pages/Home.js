@@ -6,7 +6,7 @@ import GalleryImage from "../images/steve-1979.jpg";
 import SoundCloudLogo from "../images/soundcloud.svg";
 import YouTubeLogo from "../images/youtube.svg";
 import FacebookLogo from "../images/facebook.svg";
-import { welcome, about } from "../content/text";
+import { welcome, aboutSteve } from "../content/text";
 import "./Home.css";
 
 const photoStyle = {
@@ -36,7 +36,7 @@ class Home extends Component {
         {/* ABOUT */}
         <div className="row row-style justify-content-center text-center">
           <p className="title">ABOUT STEVE</p>
-          <p className="description">{about}</p>
+          <p className="description">{aboutSteve}</p>
         </div>
 
         {/* CATEGORIES */}

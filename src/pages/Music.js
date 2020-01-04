@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import AudioPlayer from "../components/AudioPlayer/audioPlayer";
 import SongList from "../components/SongList/songList";
+import { aboutMusic } from "../content/text";
 import {
   DEFAULT_SONG,
   hawaiian,
@@ -27,7 +28,12 @@ class Music extends Component {
   render() {
     const { title } = this.state;
     return (
-      <div className="container">
+      <div className="container music-container">
+        <div className="row row-style justify-content-center text-center aboutMusic">
+          <p className="title large-title">MUSIC</p>
+          <p className="description">{aboutMusic}</p>
+          <div className="spacer"></div>
+        </div>
         <div className="row">
           <AudioPlayer title={title} />
         </div>
