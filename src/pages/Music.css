@@ -1,0 +1,12 @@
+.selected-true {
+  font-weight: 700;
+}
+
+.song {
+  cursor: pointer;
+  margin: 3px 0px;
+}
+
+.song:hover {
+  color: gray;
+}

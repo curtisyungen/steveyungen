@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import AudioPlayer from "../components/AudioPlayer/audioPlayer";
+import "./Music.css";
 
 const songs = {
   "Aloha Week Hula": "aloha-week-hula",
@@ -32,7 +33,7 @@ class Music extends Component {
           <AudioPlayer title={title} />
         </div>
         {Object.keys(songs).map(song => (
-          <div className="row">
+          <div className={`row song selected-${title === songs[song]}`}>
             <div onClick={this.setTitle.bind(this, songs[song])}>{song}</div>
           </div>
         ))}
