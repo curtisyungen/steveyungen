@@ -1,7 +1,9 @@
 .home-container {
+  font-family: "Cabin", "sans-serif";
 }
 
 .my-row {
   border: 1px dotted black;
-  height: 300px;
+  height: auto;
+  position: relative;
 }

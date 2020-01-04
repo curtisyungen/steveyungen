@@ -1,10 +1,12 @@
 import React, { Component } from "react";
+import Photo from "../components/Photo/photo";
+import alohaFriday from "../images/Aloha-Friday-SJY-11-17-2017.jpg";
 
 class Events extends Component {
   render() {
     return (
       <div>
-        <h1>Events</h1>
+        <Photo image={alohaFriday} />
       </div>
     );
   }

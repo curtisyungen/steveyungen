@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Photo from "../components/Photo/photo";
-import Steve from "../images/steve-cropped.png";
+import MusicImage from "../images/steve-turks.jpg";
+import EventsImage from "../images/Aloha-Friday-SJY-11-17-2017.jpg";
+import GalleryImage from "../images/steve-1979.jpg";
 import "./Home.css";
 
 const photoStyle = {
@@ -18,9 +20,9 @@ class Home extends Component {
           <div className="col-sm-12 col-md-4">
             <Photo
               link={"/music"}
-              image={Steve}
+              image={MusicImage}
               style={photoStyle}
-              title={"Music"}
+              title={"MUSIC"}
               description={"Music composed by Steve Yungen."}
             />
           </div>
@@ -28,9 +30,9 @@ class Home extends Component {
           <div className="col-sm-12 col-md-4">
             <Photo
               link={"/events"}
-              image={Steve}
+              image={EventsImage}
               style={photoStyle}
-              title={"Events"}
+              title={"EVENTS"}
               description={"Past and upcoming events featuring Steve."}
             />
           </div>
@@ -38,9 +40,9 @@ class Home extends Component {
           <div className="col-sm-12 col-md-4">
             <Photo
               link={"/gallery"}
-              image={Steve}
+              image={GalleryImage}
               style={photoStyle}
-              title={"Gallery"}
+              title={"GALLERY"}
               description={"About Steve and his music."}
             />
           </div>

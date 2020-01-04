@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Jumbotron from "../Jumbotron/jumbotron";
-import steve from "../../images/steve-cropped.png";
 import "./navbar.css";
 
 class Navbar extends Component {
