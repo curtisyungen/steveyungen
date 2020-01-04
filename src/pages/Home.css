@@ -37,6 +37,10 @@ hr {
   line-height: 1.2em;
 }
 
+.welcomeNote {
+  font-size: 20px;
+}
+
 @media only screen and (max-width: 768px) {
   .home-container {
     padding: 35px 20px !important;

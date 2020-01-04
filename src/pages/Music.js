@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import AudioPlayer from "../components/AudioPlayer/audioPlayer";
-import { hawaiian, composed } from "./songs";
+import { hawaiian, composed } from "../content/songs";
 import "./Music.css";
 
 class Music extends Component {
