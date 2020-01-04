@@ -48,7 +48,8 @@ hr {
 }
 
 @media only screen and (max-width: 768px) {
-  .home-container {
+  .home-container,
+  .gallery-container {
     padding: 35px 20px !important;
   }
 

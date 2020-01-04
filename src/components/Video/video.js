@@ -1,16 +1,16 @@
 import React, { Component } from "react";
+import "./video.css";
 
 class Video extends Component {
   render() {
-    const { video, height, width } = this.props;
+    const { video } = this.props;
     return (
       <iframe
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
+        className="video"
         frameborder="0"
-        height={height}
         src={video}
-        width={width}
       />
     );
   }

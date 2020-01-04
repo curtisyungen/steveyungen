@@ -24,9 +24,6 @@ const modalStyle = {
   maxWidth: "100%"
 };
 
-const videoHeight = "315px";
-const videoWidth = "560px";
-
 class Gallery extends Component {
   constructor(props) {
     super(props);
@@ -63,19 +60,19 @@ class Gallery extends Component {
         {/* ROW 1 */}
         <div className="row row-style justify-content-center text-center">
           <div
-            className="col-md-4"
+            className="col-sm-4 col-md-3"
             onClick={this.openModal.bind(this, ZeroAndSlicks)}
           >
             <Photo image={ZeroAndSlicks} style={photoStyle} />
           </div>
           <div
-            className="col-md-4"
+            className="col-sm-4 col-md-3"
             onClick={this.openModal.bind(this, GenericBand1)}
           >
             <Photo image={GenericBand1} style={photoStyle} />
           </div>
           <div
-            className="col-md-4"
+            className="col-sm-4 col-md-3"
             onClick={this.openModal.bind(this, GenericBand2)}
           >
             <Photo image={GenericBand2} style={photoStyle} />
@@ -85,19 +82,19 @@ class Gallery extends Component {
         {/* ROW 2 */}
         <div className="row row-style justify-content-center text-center">
           <div
-            className="col-md-4"
+            className="col-sm-4 col-md-3"
             onClick={this.openModal.bind(this, GenericBand3)}
           >
             <Photo image={GenericBand3} style={photoStyle} />
           </div>
           <div
-            className="col-md-4"
+            className="col-sm-4 col-md-3"
             onClick={this.openModal.bind(this, LeiAloha)}
           >
             <Photo image={LeiAloha} style={photoStyle} />
           </div>
           <div
-            className="col-md-4"
+            className="col-sm-4 col-md-3"
             onClick={this.openModal.bind(this, TurksSteve)}
           >
             <Photo image={TurksSteve} style={photoStyle} />
@@ -107,19 +104,19 @@ class Gallery extends Component {
         {/* ROW 3 */}
         <div className="row row-style justify-content-center text-center">
           <div
-            className="col-md-4"
+            className="col-sm-4 col-md-3"
             onClick={this.openModal.bind(this, GrandSteve)}
           >
             <Photo image={GrandSteve} style={photoStyle} />
           </div>
           <div
-            className="col-md-4"
+            className="col-sm-4 col-md-3"
             onClick={this.openModal.bind(this, LapSteve)}
           >
             <Photo image={LapSteve} style={photoStyle} />
           </div>
           <div
-            className="col-md-4"
+            className="col-sm-4 col-md-3"
             onClick={this.openModal.bind(this, AlohaSteve)}
           >
             <Photo image={AlohaSteve} style={photoStyle} />
@@ -138,56 +135,32 @@ class Gallery extends Component {
         </div>
 
         {/* ROW 1 */}
-        <div className="row row-style justify-content-center text-center">
-          <div className="col-md-4">
-            <Video
-              video={"https://www.youtube.com/embed/xEYHfnU0Z9o"}
-              height={videoHeight}
-              width={videoWidth}
-            />
+        <div className="row video-row justify-content-center text-center">
+          <div className="col-md-8 col-xl-4">
+            <Video video={"https://www.youtube.com/embed/xEYHfnU0Z9o"} />
           </div>
-          <div className="col-md-4">
-            <Video
-              video={"https://www.youtube.com/embed/tgwyTx6I6sY"}
-              height={videoHeight}
-              width={videoWidth}
-            />
+          <div className="col-md-8 col-xl-4">
+            <Video video={"https://www.youtube.com/embed/tgwyTx6I6sY"} />
           </div>
         </div>
 
         {/* ROW 2 */}
-        <div className="row row-style justify-content-center text-center">
-          <div className="col-md-4">
-            <Video
-              video={"https://www.youtube.com/embed/xEYHfnU0Z9o"}
-              height={videoHeight}
-              width={videoWidth}
-            />
+        <div className="row video-row justify-content-center text-center">
+          <div className="col-md-8 col-xl-4">
+            <Video video={"https://www.youtube.com/embed/xEYHfnU0Z9o"} />
           </div>
-          <div className="col-md-4">
-            <Video
-              video={"https://www.youtube.com/embed/xEYHfnU0Z9o"}
-              height={videoHeight}
-              width={videoWidth}
-            />
+          <div className="col-md-8 col-xl-4">
+            <Video video={"https://www.youtube.com/embed/xEYHfnU0Z9o"} />
           </div>
         </div>
 
         {/* ROW 3 */}
-        <div className="row row-style justify-content-center text-center">
-          <div className="col-md-4">
-            <Video
-              video={"https://www.youtube.com/embed/xEYHfnU0Z9o"}
-              height={videoHeight}
-              width={videoWidth}
-            />
+        <div className="row video-row justify-content-center text-center">
+          <div className="col-md-8 col-xl-4">
+            <Video video={"https://www.youtube.com/embed/xEYHfnU0Z9o"} />
           </div>
-          <div className="col-md-4">
-            <Video
-              video={"https://www.youtube.com/embed/xEYHfnU0Z9o"}
-              height={videoHeight}
-              width={videoWidth}
-            />
+          <div className="col-md-8 col-xl-4">
+            <Video video={"https://www.youtube.com/embed/xEYHfnU0Z9o"} />
           </div>
         </div>
       </div>
