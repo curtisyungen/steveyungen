@@ -8,7 +8,8 @@
   line-height: 28px;
 }
 
-.home-container {
+.home-container,
+.gallery-container {
   font-family: "Cabin", "sans-serif";
   max-width: 100% !important;
   padding: 40px 60px !important;

@@ -2,10 +2,16 @@ import React, { Component } from "react";
 
 class Video extends Component {
   render() {
+    const { video, height, width } = this.props;
     return (
-      <div>
-        <h1>Video</h1>
-      </div>
+      <iframe
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        frameborder="0"
+        height={height}
+        src={video}
+        width={width}
+      />
     );
   }
 }

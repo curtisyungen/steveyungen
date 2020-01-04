@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Photo from "../components/Photo/photo";
+import Video from "../components/Video/video";
 import { aboutGallery } from "../content/text";
 import ZeroAndSlicks from "../images/zero-and-the-slicks.jpg";
 import GenericBand1 from "../images/the-generic-band.jpg";
@@ -22,6 +23,9 @@ const modalStyle = {
   maxHeight: "100%",
   maxWidth: "100%"
 };
+
+const videoHeight = "315px";
+const videoWidth = "560px";
 
 class Gallery extends Component {
   constructor(props) {
@@ -49,6 +53,7 @@ class Gallery extends Component {
     const { openModal, modalImage } = this.state;
     return (
       <div className="container gallery-container">
+        {/* PHOTOS */}
         <div className="row row-style justify-content-center text-center aboutMusic">
           <p className="title large-title">PHOTOS</p>
           <p className="description">{aboutGallery}</p>
@@ -61,31 +66,19 @@ class Gallery extends Component {
             className="col-md-4"
             onClick={this.openModal.bind(this, ZeroAndSlicks)}
           >
-            <Photo
-              className="col-md-4"
-              image={ZeroAndSlicks}
-              style={photoStyle}
-            />
+            <Photo image={ZeroAndSlicks} style={photoStyle} />
           </div>
           <div
             className="col-md-4"
             onClick={this.openModal.bind(this, GenericBand1)}
           >
-            <Photo
-              className="col-md-4"
-              image={GenericBand1}
-              style={photoStyle}
-            />
+            <Photo image={GenericBand1} style={photoStyle} />
           </div>
           <div
             className="col-md-4"
             onClick={this.openModal.bind(this, GenericBand2)}
           >
-            <Photo
-              className="col-md-4"
-              image={GenericBand2}
-              style={photoStyle}
-            />
+            <Photo image={GenericBand2} style={photoStyle} />
           </div>
         </div>
 
@@ -95,23 +88,19 @@ class Gallery extends Component {
             className="col-md-4"
             onClick={this.openModal.bind(this, GenericBand3)}
           >
-            <Photo
-              className="col-md-4"
-              image={GenericBand3}
-              style={photoStyle}
-            />
+            <Photo image={GenericBand3} style={photoStyle} />
           </div>
           <div
             className="col-md-4"
             onClick={this.openModal.bind(this, LeiAloha)}
           >
-            <Photo className="col-md-4" image={LeiAloha} style={photoStyle} />
+            <Photo image={LeiAloha} style={photoStyle} />
           </div>
           <div
             className="col-md-4"
             onClick={this.openModal.bind(this, TurksSteve)}
           >
-            <Photo className="col-md-4" image={TurksSteve} style={photoStyle} />
+            <Photo image={TurksSteve} style={photoStyle} />
           </div>
         </div>
 
@@ -121,25 +110,86 @@ class Gallery extends Component {
             className="col-md-4"
             onClick={this.openModal.bind(this, GrandSteve)}
           >
-            <Photo className="col-md-4" image={GrandSteve} style={photoStyle} />
+            <Photo image={GrandSteve} style={photoStyle} />
           </div>
           <div
             className="col-md-4"
             onClick={this.openModal.bind(this, LapSteve)}
           >
-            <Photo className="col-md-4" image={LapSteve} style={photoStyle} />
+            <Photo image={LapSteve} style={photoStyle} />
           </div>
           <div
             className="col-md-4"
             onClick={this.openModal.bind(this, AlohaSteve)}
           >
-            <Photo className="col-md-4" image={AlohaSteve} style={photoStyle} />
+            <Photo image={AlohaSteve} style={photoStyle} />
           </div>
         </div>
 
         <Modal open={openModal} onClose={this.closeModal}>
           <Photo image={modalImage} style={modalStyle} />
         </Modal>
+
+        {/* VIDEOS */}
+        <div className="row row-style justify-content-center text-center aboutMusic">
+          <div className="spacer"></div>
+          <p className="title large-title">VIDEOS</p>
+          <div className="spacer"></div>
+        </div>
+
+        {/* ROW 1 */}
+        <div className="row row-style justify-content-center text-center">
+          <div className="col-md-4">
+            <Video
+              video={"https://www.youtube.com/embed/xEYHfnU0Z9o"}
+              height={videoHeight}
+              width={videoWidth}
+            />
+          </div>
+          <div className="col-md-4">
+            <Video
+              video={"https://www.youtube.com/embed/tgwyTx6I6sY"}
+              height={videoHeight}
+              width={videoWidth}
+            />
+          </div>
+        </div>
+
+        {/* ROW 2 */}
+        <div className="row row-style justify-content-center text-center">
+          <div className="col-md-4">
+            <Video
+              video={"https://www.youtube.com/embed/xEYHfnU0Z9o"}
+              height={videoHeight}
+              width={videoWidth}
+            />
+          </div>
+          <div className="col-md-4">
+            <Video
+              video={"https://www.youtube.com/embed/xEYHfnU0Z9o"}
+              height={videoHeight}
+              width={videoWidth}
+            />
+          </div>
+        </div>
+
+        {/* ROW 3 */}
+        <div className="row row-style justify-content-center text-center">
+          <div className="col-md-4">
+            <Video
+              video={"https://www.youtube.com/embed/xEYHfnU0Z9o"}
+              height={videoHeight}
+              width={videoWidth}
+            />
+          </div>
+          <div className="col-md-4">
+            <Video
+              video={"https://www.youtube.com/embed/xEYHfnU0Z9o"}
+              height={videoHeight}
+              width={videoWidth}
+            />
+          </div>
+        </div>
       </div>
     );
   }
