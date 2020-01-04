@@ -4,6 +4,7 @@
 
 .song {
   cursor: pointer;
+  display: block;
   margin: 3px 0px;
 }
 

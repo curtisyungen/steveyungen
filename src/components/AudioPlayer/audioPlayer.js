@@ -1,17 +1,18 @@
 import React, { Component } from "react";
+import "./audioPlayer.css";
 
 class AudioPlayer extends Component {
   render() {
     const { title } = this.props;
     return (
-      <iframe
-        width="100%"
-        height="166"
-        scrolling="no"
-        frameborder="no"
-        allow="autoplay"
-        src={`https://w.soundcloud.com/player/?url=https://soundcloud.com/steve-yungen/${title}`}
-      ></iframe>
+      <div className="iframe-container">
+        <iframe
+          auto_play
+          height="175"
+          src={`https://w.soundcloud.com/player/?url=https://soundcloud.com/steve-yungen/${title}`}
+          width="100%"
+        ></iframe>
+      </div>
     );
   }
 }
