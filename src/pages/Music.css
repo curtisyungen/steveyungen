@@ -1,4 +1,10 @@
-.selected-true {
+.selected-false {
+  color: black;
+}
+
+.selected-true,
+.selected-true:hover {
+  color: #ff7700 !important;
   font-weight: 700;
 }
 
@@ -10,4 +16,8 @@
 
 .song:hover {
   color: gray;
+}
+
+.songList {
+  display: inline-block;
 }
