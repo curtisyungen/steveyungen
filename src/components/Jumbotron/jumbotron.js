@@ -8,7 +8,10 @@ class Jumbotron extends Component {
         className="jumbotron"
         style={{
           background: this.props.background,
-          backgroundImage: `url(${this.props.image}`
+          backgroundImage: `url(${this.props.image}`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          borderRadius: "0px"
         }}
       >
         {this.props.children}

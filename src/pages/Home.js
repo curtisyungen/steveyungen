@@ -3,12 +3,20 @@ import Photo from "../components/Photo/photo";
 import MusicImage from "../images/steve-turks.jpg";
 import EventsImage from "../images/Aloha-Friday-SJY-11-17-2017.jpg";
 import GalleryImage from "../images/steve-1979.jpg";
+import SoundCloudLogo from "../images/soundcloud.svg";
+import YouTubeLogo from "../images/youtube.svg";
+import FacebookLogo from "../images/facebook.svg";
 import "./Home.css";
 
 const photoStyle = {
   cursor: "pointer",
   maxHeight: "100%",
   maxWidth: "100%"
+};
+
+const logoStyle = {
+  cursor: "pointer",
+  maxHeight: "150px"
 };
 
 class Home extends Component {
@@ -49,7 +57,31 @@ class Home extends Component {
         </div>
 
         <div className="row my-row justify-content-center text-center">
-          <div className="col-md-12">Row 2 Col 1</div>
+          <p className="col-md-12 title">FIND STEVE ONLINE</p>
+          <div className="col-md-4">
+            <Photo
+              image={SoundCloudLogo}
+              style={logoStyle}
+              link="https://soundcloud.com/steve-yungen"
+              target="_blank"
+            />
+          </div>
+          <div className="col-md-4">
+            <Photo
+              image={YouTubeLogo}
+              style={logoStyle}
+              link="https://www.youtube.com/user/sugarbeet56"
+              target="_blank"
+            />
+          </div>
+          <div className="col-md-4">
+            <Photo
+              image={FacebookLogo}
+              style={logoStyle}
+              link="https://www.facebook.com/steve.yungen"
+              target="_blank"
+            />
+          </div>
         </div>
 
         <div className="row my-row justify-content-center text-center">

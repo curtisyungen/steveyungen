@@ -5,25 +5,6 @@
   word-wrap: break-word;
 }
 
-.photoDescription {
-  color: #303030;
-  font-family: "Roboto", "sans-serif";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 300 !important;
-  letter-spacing: 0.02em;
-  line-height: 28px;
-}
-
-.photoTitle {
-  font-family: "Cabin", "sans-serif";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: 3px;
-  line-height: 1.2em;
-}
-
 @media only screen and (max-width: 768px) {
   .photo img {
     margin-right: 0px !important;

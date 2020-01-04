@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import Jumbotron from "../Jumbotron/jumbotron";
+import JumbotronImage from "../../images/steve-grand-canyon-cropped.png";
 import "./navbar.css";
 
 class Navbar extends Component {
   render() {
     return (
-      <Jumbotron background={"gray"} image={null}>
+      <Jumbotron background={"gray"} image={JumbotronImage}>
         <nav className="navbar navbar-expand-lg text-right">
           <a className="navbar-brand" href="/home">
             <span>Steve Yungen</span>

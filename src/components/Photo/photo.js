@@ -3,12 +3,12 @@ import "./photo.css";
 
 class Photo extends Component {
   render() {
-    const { image, title, description, link } = this.props;
+    const { image, title, description, link, target } = this.props;
     return (
-      <a href={link} className="photo">
+      <a href={link} className="photo" target={target}>
         <img src={image} style={this.props.style} />
-        <p className="photoTitle">{title}</p>
-        <p className="photoDescription">{description}</p>
+        <p className="title">{title}</p>
+        <p className="description">{description}</p>
       </a>
     );
   }
