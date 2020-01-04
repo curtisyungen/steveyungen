@@ -1,4 +1,11 @@
 .video {
   height: 325px;
+  margin-bottom: 20px;
   width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .video {
+    margin-bottom: 5px;
+  }
 }
