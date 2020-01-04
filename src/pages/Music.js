@@ -28,7 +28,10 @@ class Music extends Component {
         <h4>Hawaiian</h4>
         <div>
           {Object.keys(hawaiian).map(song => (
-            <div className={`row song selected-${title === hawaiian[song]}`}>
+            <div
+              key={song}
+              className={`row song selected-${title === hawaiian[song]}`}
+            >
               <div onClick={this.setTitle.bind(this, hawaiian[song])}>
                 {song}
               </div>
@@ -39,7 +42,10 @@ class Music extends Component {
         <h4>Composed</h4>
         <div>
           {Object.keys(composed).map(song => (
-            <div className={`row song selected-${title === composed[song]}`}>
+            <div
+              key={song}
+              className={`row song selected-${title === composed[song]}`}
+            >
               <div onClick={this.setTitle.bind(this, composed[song])}>
                 {song}
               </div>

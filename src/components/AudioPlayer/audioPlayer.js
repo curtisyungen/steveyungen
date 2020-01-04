@@ -7,10 +7,12 @@ class AudioPlayer extends Component {
     return (
       <div className="iframe-container">
         <iframe
-          auto_play
-          height="175"
-          src={`https://w.soundcloud.com/player/?url=https://soundcloud.com/steve-yungen/${title}`}
+          allow="autoplay"
+          frameborder="no"
+          height="300"
+          scrolling="no"
           width="100%"
+          src={`https://w.soundcloud.com/player/?url=https://soundcloud.com/steve-yungen/${title}&auto_play=true`}
         ></iframe>
       </div>
     );
