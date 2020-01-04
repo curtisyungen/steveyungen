@@ -18,6 +18,11 @@
   position: relative;
 }
 
+.spacer {
+  height: 68px;
+  width: 100%;
+}
+
 .title {
   font-family: "Cabin", "sans-serif";
   font-size: 20px;

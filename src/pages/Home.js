@@ -16,7 +16,9 @@ const photoStyle = {
 
 const logoStyle = {
   cursor: "pointer",
-  maxHeight: "150px"
+  marginTop: "35px",
+  maxHeight: "80px",
+  maxWidth: "100%"
 };
 
 class Home extends Component {
@@ -24,6 +26,7 @@ class Home extends Component {
     return (
       <div className="container home-container">
         <div className="row my-row justify-content-center text-center">
+          <div className="spacer" />
           {/* Music */}
           <div className="col-sm-12 col-md-4">
             <Photo
@@ -57,6 +60,7 @@ class Home extends Component {
         </div>
 
         <div className="row my-row justify-content-center text-center">
+          <div className="spacer" />
           <p className="col-md-12 title">FIND STEVE ONLINE</p>
           <div className="col-md-4">
             <Photo
