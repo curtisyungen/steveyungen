@@ -1,14 +1,13 @@
 import React, { Component } from "react";
-import "./App.css";
 
-class App extends Component {
+class ModalType extends Component {
   render() {
     return (
       <div>
-        <h1>Hi</h1>
+        <h1>Modal</h1>
       </div>
     );
   }
 }
 
-export default App;
+export default ModalType;
