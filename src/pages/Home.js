@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Photo from "../components/Photo/photo";
-import MusicImage from "../images/steve-turks.jpg";
+import MusicImage from "../images/steve-crater-lake.jpg";
 import EventsImage from "../images/Aloha-Friday-SJY-11-17-2017.jpg";
 import GalleryImage from "../images/steve-1979.jpg";
 import SoundCloudLogo from "../images/soundcloud.svg";
@@ -9,9 +9,10 @@ import FacebookLogo from "../images/facebook.svg";
 import "./Home.css";
 
 const photoStyle = {
+  border: "1px solid black",
   cursor: "pointer",
-  maxHeight: "100%",
-  maxWidth: "100%"
+  maxHeight: "400px",
+  maxWidth: "500px"
 };
 
 const logoStyle = {
