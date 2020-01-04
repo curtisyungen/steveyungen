@@ -6,7 +6,7 @@ import Music from "./pages/Music";
 import Videos from "./pages/Videos";
 import Gallery from "./pages/Gallery";
 import Events from "./pages/Events";
-import "./App.css";
+import Footer from "./components/Footer/footer";
 
 class App extends Component {
   render() {
@@ -21,6 +21,7 @@ class App extends Component {
           <Route exact path="/gallery" component={Gallery} />
           <Route exact path="/events" component={Events} />
         </Switch>
+        <Footer />
       </Router>
     );
   }

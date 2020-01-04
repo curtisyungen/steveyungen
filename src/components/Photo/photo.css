@@ -1,0 +1,17 @@
+.photo {
+}
+
+.photoDescription {
+  font-size: 14px;
+}
+
+.photoTitle {
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 768px) {
+  .photo img {
+    margin-right: 0px !important;
+    width: 100vw !important;
+  }
+}
