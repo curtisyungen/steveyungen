@@ -1,14 +1,17 @@
 import React, { Component } from "react";
-import Player from "react-soundcloud-widget-player";
 
 class AudioPlayer extends Component {
   render() {
-    const { title, link } = this.props;
+    const { title } = this.props;
     return (
-      <Player
-        title={title}
-        audioUrl={`https://w.soundcloud.com/player/?url=${link}`}
-      />
+      <iframe
+        width="100%"
+        height="166"
+        scrolling="no"
+        frameborder="no"
+        allow="autoplay"
+        src={`https://w.soundcloud.com/player/?url=https://soundcloud.com/steve-yungen/${title}`}
+      ></iframe>
     );
   }
 }
