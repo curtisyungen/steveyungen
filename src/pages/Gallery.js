@@ -10,58 +10,136 @@ import TurksSteve from "../images/steve-turks.jpg";
 import GrandSteve from "../images/steve-grand-canyon-guitar.jpg";
 import LapSteve from "../images/lap-steve.jpg";
 import AlohaSteve from "../images/aloha-friday-steve.jpg";
+import Modal from "react-responsive-modal";
 
 const photoStyle = {
+  cursor: "pointer",
+  maxHeight: "100%",
+  maxWidth: "100%"
+};
+
+const modalStyle = {
   maxHeight: "100%",
   maxWidth: "100%"
 };
 
 class Gallery extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      openModal: false,
+      modalImage: null
+    };
+  }
+
+  openModal = modalImage => {
+    this.setState({
+      openModal: true,
+      modalImage
+    });
+  };
+
+  closeModal = () => {
+    this.setState({
+      openModal: false
+    });
+  };
+
   render() {
+    const { openModal, modalImage } = this.state;
     return (
       <div className="container gallery-container">
         <div className="row row-style justify-content-center text-center aboutMusic">
-          <p className="title large-title">GALLERY</p>
+          <p className="title large-title">PHOTOS</p>
           <p className="description">{aboutGallery}</p>
           <div className="spacer"></div>
         </div>
+
+        {/* ROW 1 */}
         <div className="row row-style justify-content-center text-center">
-          <div className="col-md-8">
-            <Photo image={ZeroAndSlicks} style={photoStyle} />
+          <div
+            className="col-md-4"
+            onClick={this.openModal.bind(this, ZeroAndSlicks)}
+          >
+            <Photo
+              className="col-md-4"
+              image={ZeroAndSlicks}
+              style={photoStyle}
+            />
+          </div>
+          <div
+            className="col-md-4"
+            onClick={this.openModal.bind(this, GenericBand1)}
+          >
+            <Photo
+              className="col-md-4"
+              image={GenericBand1}
+              style={photoStyle}
+            />
+          </div>
+          <div
+            className="col-md-4"
+            onClick={this.openModal.bind(this, GenericBand2)}
+          >
+            <Photo
+              className="col-md-4"
+              image={GenericBand2}
+              style={photoStyle}
+            />
           </div>
         </div>
+
+        {/* ROW 2 */}
         <div className="row row-style justify-content-center text-center">
-          <div className="col-md-4">
-            <Photo image={GenericBand1} style={photoStyle} />
+          <div
+            className="col-md-4"
+            onClick={this.openModal.bind(this, GenericBand3)}
+          >
+            <Photo
+              className="col-md-4"
+              image={GenericBand3}
+              style={photoStyle}
+            />
           </div>
-          <div className="col-md-4">
-            <Photo image={GenericBand2} style={photoStyle} />
+          <div
+            className="col-md-4"
+            onClick={this.openModal.bind(this, LeiAloha)}
+          >
+            <Photo className="col-md-4" image={LeiAloha} style={photoStyle} />
           </div>
-          <div className="col-md-4">
-            <Photo image={GenericBand3} style={photoStyle} />
+          <div
+            className="col-md-4"
+            onClick={this.openModal.bind(this, TurksSteve)}
+          >
+            <Photo className="col-md-4" image={TurksSteve} style={photoStyle} />
           </div>
         </div>
+
+        {/* ROW 3 */}
         <div className="row row-style justify-content-center text-center">
-          <div className="col-md-6">
-            <Photo image={LeiAloha} style={photoStyle} />
+          <div
+            className="col-md-4"
+            onClick={this.openModal.bind(this, GrandSteve)}
+          >
+            <Photo className="col-md-4" image={GrandSteve} style={photoStyle} />
           </div>
-          <div className="col-md-6">
-            <Photo image={TurksSteve} style={photoStyle} />
+          <div
+            className="col-md-4"
+            onClick={this.openModal.bind(this, LapSteve)}
+          >
+            <Photo className="col-md-4" image={LapSteve} style={photoStyle} />
+          </div>
+          <div
+            className="col-md-4"
+            onClick={this.openModal.bind(this, AlohaSteve)}
+          >
+            <Photo className="col-md-4" image={AlohaSteve} style={photoStyle} />
           </div>
         </div>
-        <div className="row row-style justify-content-center text-center">
-          <div className="col-md-4">
-            <Photo image={GrandSteve} style={photoStyle} />
-          </div>
-          <div className="col-md-4">
-            <Photo image={LapSteve} style={photoStyle} />
-          </div>
-        </div>
-        <div className="row row-style justify-content-center text-center">
-          <div className="col-md-8">
-            <Photo image={AlohaSteve} style={photoStyle} />
-          </div>
-        </div>
+
+        <Modal open={openModal} onClose={this.closeModal}>
+          <Photo image={modalImage} style={modalStyle} />
+        </Modal>
       </div>
     );
   }

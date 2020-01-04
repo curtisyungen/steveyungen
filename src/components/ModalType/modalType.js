@@ -3,8 +3,9 @@ import Modal from "react-responsive-modal";
 
 class ModalType extends Component {
   render() {
+    const { openModal, closeModal } = this.props;
     return (
-      <Modal>
+      <Modal open={openModal} onClose={closeModal}>
         <h1>Modal</h1>
       </Modal>
     );
