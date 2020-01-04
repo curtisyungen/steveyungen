@@ -41,4 +41,8 @@ hr {
   .home-container {
     padding: 35px 20px !important;
   }
+
+  .spacer {
+    height: 38px;
+  }
 }

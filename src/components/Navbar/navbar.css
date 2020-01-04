@@ -3,7 +3,23 @@
   height: 250px;
 }
 
+.navbar-brand {
+  position: absolute;
+  top: 0px;
+}
+
 #navbarNav {
   position: absolute;
   right: 50px;
+  top: 0px;
+}
+
+.nav-link,
+.navbar-brand {
+  color: black !important;
+  text-decoration: none !important;
+}
+
+.nav-link:hover {
+  color: #252525 !important;
 }

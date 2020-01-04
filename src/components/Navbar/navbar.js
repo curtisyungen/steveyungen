@@ -9,7 +9,7 @@ class Navbar extends Component {
       <Jumbotron background={"gray"} image={JumbotronImage}>
         <nav className="navbar navbar-expand-lg text-right">
           <a className="navbar-brand" href="/home">
-            <span>Steve Yungen</span>
+            <span>STEVE YUNGEN</span>
           </a>
           <button
             className="navbar-toggler"
@@ -25,32 +25,32 @@ class Navbar extends Component {
             <ul className="navbar-nav">
               <li className="nav-item">
                 <a className="nav-link" href="/home">
-                  Home
+                  HOME
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/music">
-                  Music
+                  MUSIC
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/videos">
-                  Videos
+                  VIDEOS
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/gallery">
-                  Gallery
+                  GALLERY
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/events">
-                  Events
+                  EVENTS
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/">
-                  Contact
+                  CONTACT
                 </a>
               </li>
             </ul>

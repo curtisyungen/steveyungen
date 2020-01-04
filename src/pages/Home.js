@@ -57,7 +57,10 @@ class Home extends Component {
               description={"About Steve and his music."}
             />
           </div>
+          <div className="spacer" />
         </div>
+
+        <hr />
 
         <div className="row row-style justify-content-center text-center">
           <div className="spacer" />
@@ -86,6 +89,7 @@ class Home extends Component {
               target="_blank"
             />
           </div>
+          <div className="spacer" />
         </div>
 
         <hr />
