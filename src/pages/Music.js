@@ -1,15 +1,7 @@
 import React, { Component } from "react";
 import AudioPlayer from "../components/AudioPlayer/audioPlayer";
+import { hawaiian, composed } from "./songs";
 import "./Music.css";
-
-const hawaiian = {
-  "Aloha Week Hula": "aloha-week-hula",
-  Ulupalakua: "ulupalakua",
-  Kainoa: "kainoa",
-  "At The Beach": "at-the-beach-1",
-  "Hanalei Moon": "hanalei-moon",
-  "He Punahele": "he-punahele"
-};
 
 class Music extends Component {
   constructor(props) {
@@ -32,10 +24,23 @@ class Music extends Component {
         <div className="row">
           <AudioPlayer title={title} />
         </div>
+        {/* Hawaiian */}
+        <h4>Hawaiian</h4>
         <div>
           {Object.keys(hawaiian).map(song => (
             <div className={`row song selected-${title === hawaiian[song]}`}>
               <div onClick={this.setTitle.bind(this, hawaiian[song])}>
+                {song}
+              </div>
+            </div>
+          ))}
+        </div>
+        {/* Composed */}
+        <h4>Composed</h4>
+        <div>
+          {Object.keys(composed).map(song => (
+            <div className={`row song selected-${title === composed[song]}`}>
+              <div onClick={this.setTitle.bind(this, composed[song])}>
                 {song}
               </div>
             </div>
