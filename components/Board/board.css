@@ -1,0 +1,162 @@
+.board {
+    border: 1px solid black;
+    margin: 10px auto;
+    padding: 10px;
+    width: fit-content;
+}
+
+.board-light {
+    background: #fff;
+}
+
+.board-dark {
+    background: rgb(61, 61, 61);
+}
+
+.board-blue {
+    background: rgb(234, 245, 248);
+}
+
+.board-green {
+    background: rgb(62, 177, 62);
+}
+
+.boardForm {
+    text-align: center;
+}
+
+.boardSize {
+    display: inline-block;
+    height: 26px;
+    margin: 5px;
+    width: 50px;
+}
+
+.buttonSet1 {
+    display: block;
+    text-align: center;
+}
+
+.color-dark {
+    color: black;
+}
+
+.color-light {
+    color: white;
+}
+
+.curtis-btn {
+    margin-top: 10px;
+    text-decoration: none;
+    width: 250px;
+}
+
+.curtis-text {
+    font-size: 13px;
+    margin: 15px auto;
+    width: 300px;
+}
+
+.formBtn {
+    margin: 2px;
+    width: 100px;
+}
+
+.group-inline-block {
+    display: inline-block;
+}
+
+.main {
+    height: 100vh;
+    padding: 20px;
+    padding-top: 40px;
+}
+
+.main-light {
+    background: rgb(252, 252, 252);
+}
+
+.main-dark {
+    background: rgb(161, 161, 161);
+}
+
+.main-blue {
+    background: rgb(61, 61, 125);
+}
+
+.main-green {
+    background: rgb(0, 100, 51);
+}
+
+.pattern {
+    border: 1px solid black;
+    cursor: pointer;
+    display: inline-block;
+    height: 150px;
+    margin-right: 5px;
+    margin-top: 5px;
+    width: 150px;
+}
+
+.patternList {
+    margin-top: 35px;
+    text-align: center;
+}
+
+.row {
+    flex-wrap: nowrap !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.subTitle {
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.theme {
+    cursor: pointer;
+    display: inline-block;
+    height: 50px;
+    margin-right: 3px;
+    padding: 20px;
+    width: 50px;
+}
+
+.theme:last-child {
+    margin-right: 0px;
+}
+
+.themeList {
+    margin-top: 35px;
+}
+
+.theme-light {
+    border: 10px solid rgb(242, 242, 242);
+    background: black;
+}
+
+.theme-dark {
+    border: 10px solid rgb(61, 61, 61);
+    background: gold;
+}
+
+.theme-blue {
+    border: 10px solid rgb(234, 245, 248);
+    background: steelblue;
+}
+
+.theme-green {
+    border: 10px solid rgb(62, 177, 62);
+    background: lightgreen;
+}
+
+.theme-wild {
+    border: 10px solid lightgray;
+    background: rgb(172, 14, 172);
+}
+
+.title {
+    margin-bottom: 15px;
+}
