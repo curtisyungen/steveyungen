@@ -6,7 +6,7 @@ class Photo extends Component {
     const { image, title, description } = this.props;
     return (
       <div className="photo">
-        <img src={image} style={this.props} />
+        <img src={image} style={this.props.style} />
         <p className="photoTitle">{title}</p>
         <p className="photoDescription">{description}</p>
       </div>

@@ -1,15 +1,7 @@
 .home-container {
-  border: 1px solid black;
 }
 
-.row-1 {
-  border: 3px solid red;
-}
-
-.row-2 {
-  border: 3px solid blue;
-}
-
-.row-3 {
-  border: 3px solid orange;
+.my-row {
+  border: 1px dotted black;
+  height: 300px;
 }
