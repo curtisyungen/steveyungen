@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import AudioPlayer from "../components/AudioPlayer/audioPlayer";
 
+const songs = ["aloha-week-hula", "ulupalakua", "kainoa", "at-the-beach-1"];
+
 class Music extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      title: null
+      title: songs[0]
     };
   }
 
@@ -22,14 +24,11 @@ class Music extends Component {
         <div className="row">
           <AudioPlayer title={title} />
         </div>
-        <div className="row">
-          <div onClick={this.setTitle.bind(this, "aloha-week-hula")}>
-            Aloha Week Hula
+        {songs.map(song => (
+          <div className="row">
+            <div onClick={this.setTitle.bind(this, song)}>{song}</div>
           </div>
-        </div>
-        <div className="row">
-          <div onClick={this.setTitle.bind(this, "ulupalakua")}>Ulupalakua</div>
-        </div>
+        ))}
       </div>
     );
   }
