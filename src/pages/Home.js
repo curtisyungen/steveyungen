@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Photo from "../components/Photo/photo";
 import Steve from "../images/steve-cropped.png";
+import Player from "react-soundcloud-widget-player";
 import "./Home.css";
 
 const photoStyle = {
@@ -13,6 +14,10 @@ class Home extends Component {
   render() {
     return (
       <div className="container home-container">
+        <Player
+          title="test"
+          audioUrl="https://w.soundcloud.com/player/?url=https://soundcloud.com/steve-yungen/aloha-week-hula"
+        />
         <div className="row my-row justify-content-center text-center">
           {/* Music */}
           <div className="col-sm-12 col-md-4">
