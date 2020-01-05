@@ -5,7 +5,12 @@ class Video extends Component {
   render() {
     const { video } = this.props;
     return (
-      <iframe allowfullscreen className="video" frameborder="0" src={video} />
+      <iframe
+        allowfullscreen
+        className="video fadeIn-2"
+        frameborder="0"
+        src={video}
+      />
     );
   }
 }
