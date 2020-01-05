@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Jumbotron from "../Jumbotron/jumbotron";
-import JumbotronImage from "../../images/steve-cover.png";
 import { welcome } from "../../content/text";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -19,7 +18,7 @@ class Navbar extends Component {
             <p className="welcomeNote">{welcome}</p>
           </a>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-toggle="collapse"
             data-target="#navbarNav"

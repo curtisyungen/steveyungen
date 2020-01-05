@@ -9,6 +9,8 @@
 .navbar {
   background-repeat: no-repeat;
   height: 250px;
+  max-width: 100% !important;
+  overflow-x: hidden !important;
 }
 
 .navbar-brand {
