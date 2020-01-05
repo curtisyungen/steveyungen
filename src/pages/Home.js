@@ -7,7 +7,7 @@ import GalleryImage from "../images/steve-1979.jpg";
 import SoundCloudLogo from "../images/soundcloud.svg";
 import YouTubeLogo from "../images/youtube.svg";
 import FacebookLogo from "../images/facebook.svg";
-import { welcome, aboutSteve } from "../content/text";
+import { aboutSteve } from "../content/text";
 import "./Home.css";
 
 const photoStyle = {
@@ -28,12 +28,6 @@ class Home extends Component {
   render() {
     return (
       <div className="container home-container">
-        {/* TITLE */}
-        <div className="row row-style justify-content-center text-center">
-          <p className="welcomeNote">{welcome}</p>
-          <div className="spacer"></div>
-        </div>
-
         {/* ABOUT */}
         <div className="row row-style justify-content-center text-center">
           <p className="title">ABOUT STEVE</p>

@@ -74,12 +74,6 @@ hr {
   word-wrap: break-word;
 }
 
-.welcomeNote {
-  font-family: "Signika", "sans-serif";
-  font-size: 32px;
-  margin-top: -20px;
-}
-
 @media only screen and (max-width: 768px) {
   .home-container,
   .gallery-container {
