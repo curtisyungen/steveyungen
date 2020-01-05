@@ -33,6 +33,10 @@ hr {
   width: 100%;
 }
 
+.spacer-small {
+  height: 50px;
+}
+
 .title {
   font-family: "Cabin", "sans-serif";
   font-size: 20px;
@@ -46,13 +50,19 @@ hr {
 }
 
 .welcomeNote {
-  font-size: 20px;
+  font-family: "Signika", "sans-serif";
+  font-size: 32px;
+  margin-top: -20px;
 }
 
 @media only screen and (max-width: 768px) {
   .home-container,
   .gallery-container {
     padding: 35px 20px !important;
+  }
+
+  .spacer-small {
+    height: 24px;
   }
 
   .spacer {
