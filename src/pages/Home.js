@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Photo from "../components/Photo/photo";
+import Logo from "../components/Logo/logo";
 import MusicImage from "../images/steve-crater-lake.jpg";
 import EventsImage from "../images/Aloha-Friday-SJY-11-17-2017.jpg";
 import GalleryImage from "../images/steve-1979.jpg";
@@ -79,24 +80,24 @@ class Home extends Component {
         <div className="row row-style justify-content-center text-center">
           <div className="spacer" />
           <p className="col-md-12 title">FIND STEVE ONLINE</p>
-          <div className="col-md-2">
-            <Photo
+          <div className="col-xs-4 col-md-2">
+            <Logo
               image={SoundCloudLogo}
               style={logoStyle}
               link="https://soundcloud.com/steve-yungen"
               target="_blank"
             />
           </div>
-          <div className="col-md-2">
-            <Photo
+          <div className="col-xs-4 col-md-2">
+            <Logo
               image={YouTubeLogo}
               style={logoStyle}
               link="https://www.youtube.com/user/sugarbeet56/videos"
               target="_blank"
             />
           </div>
-          <div className="col-md-2">
-            <Photo
+          <div className="col-xs-4 col-md-2">
+            <Logo
               image={FacebookLogo}
               style={logoStyle}
               link="https://www.facebook.com/steve.yungen"
