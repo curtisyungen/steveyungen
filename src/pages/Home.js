@@ -27,7 +27,7 @@ const logoStyle = {
 class Home extends Component {
   render() {
     return (
-      <div className="container home-container">
+      <div className="container home-container fadeIn">
         {/* TITLE */}
         <div className="row row-style justify-content-center text-center">
           <p className="welcomeNote">{welcome}</p>

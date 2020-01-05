@@ -1,3 +1,5 @@
+@import "../styles/animations.css";
+
 .description {
   color: #303030;
   font-family: "Roboto", "sans-serif";
@@ -8,11 +10,26 @@
   line-height: 28px;
 }
 
+.fadeIn {
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s; /* Firefox < 16 */
+  -ms-animation: fadein 1s; /* Internet Explorer */
+  -o-animation: fadein 1s; /* Opera < 12.1 */
+  animation: fadein 1s;
+}
+
 .home-container,
+.music-container,
 .gallery-container {
   font-family: "Cabin", "sans-serif";
   max-width: 100% !important;
   padding: 40px 60px !important;
+
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s; /* Firefox < 16 */
+  -ms-animation: fadein 1s; /* Internet Explorer */
+  -o-animation: fadein 1s; /* Opera < 12.1 */
+  animation: fadein 1s;
 }
 
 hr {
