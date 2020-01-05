@@ -1,4 +1,25 @@
 .jumbotron {
+  background-image: url("../../images/steve-cover-full.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-bottom: 8rem;
   padding-top: 1rem !important;
+}
+
+@media only screen and (max-width: 1200px) {
+  .jumbotron {
+    background-image: url("../../images/steve-cover-large.png");
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .jumbotron {
+    background-image: url("../../images/steve-cover-medium.png");
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .jumbotron {
+    background-image: url("../../images/steve-cover-small.png");
+  }
 }

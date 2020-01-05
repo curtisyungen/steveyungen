@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Jumbotron from "../Jumbotron/jumbotron";
-import JumbotronImage from "../../images/crater-lake.jpg";
+import JumbotronImage from "../../images/steve-cover.png";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
@@ -11,7 +11,7 @@ library.add(faBars);
 class Navbar extends Component {
   render() {
     return (
-      <Jumbotron background={"gray"} image={JumbotronImage}>
+      <Jumbotron background={"gray"}>
         <nav className="navbar navbar-expand-lg text-right">
           <a className="navbar-brand" href="/home">
             <span>STEVE YUNGEN</span>
