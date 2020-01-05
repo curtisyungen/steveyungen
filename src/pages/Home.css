@@ -46,9 +46,9 @@ body {
   animation: fadein 3s;
 }
 
+.gallery-container,
 .home-container,
-.music-container,
-.gallery-container {
+.music-container {
   font-family: "Cabin", "sans-serif";
   padding: 40px 60px !important;
 
@@ -76,6 +76,10 @@ hr {
   height: 68px;
 }
 
+.tipJar-container {
+  padding: 10px 20px;
+}
+
 .title {
   font-family: "Cabin", "sans-serif";
   font-size: 20px;
@@ -90,7 +94,8 @@ hr {
 
 @media only screen and (max-width: 768px) {
   .home-container,
-  .gallery-container {
+  .gallery-container,
+  .tipJar-container {
     padding: 35px 20px !important;
   }
 
