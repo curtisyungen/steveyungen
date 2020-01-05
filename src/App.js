@@ -5,6 +5,8 @@ import Home from "./pages/Home";
 import Music from "./pages/Music";
 import Gallery from "./pages/Gallery";
 import Events from "./pages/Events";
+import TipJar from "./pages/TipJar";
+import ErrorPage from "./pages/ErrorPage";
 import Footer from "./components/Footer/footer";
 
 class App extends Component {
@@ -18,6 +20,8 @@ class App extends Component {
           <Route exact path="/music" component={Music} />
           <Route exact path="/gallery" component={Gallery} />
           <Route exact path="/events" component={Events} />
+          <Route exact path="/tipJar" component={TipJar} />
+          <Route component={ErrorPage} />
         </Switch>
         <Footer />
       </Router>

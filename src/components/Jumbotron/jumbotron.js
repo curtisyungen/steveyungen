@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import DonateBtns from "../DonateBtns/donateBtns";
+import LeaveATip from "../DonateBtns/leaveATip";
 import "./jumbotron.css";
 
 class Jumbotron extends Component {
@@ -7,7 +8,7 @@ class Jumbotron extends Component {
     return (
       <div className="jumbotron">
         {this.props.children}
-        <DonateBtns source={"jumbotron"} />
+        <LeaveATip source="jumbotron" />
       </div>
     );
   }
