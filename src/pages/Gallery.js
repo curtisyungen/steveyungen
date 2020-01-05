@@ -7,7 +7,7 @@ import { galleryImages } from "../content/images";
 
 const photoStyle = {
   cursor: "pointer",
-  maxHeight: "100%",
+  maxHeight: "300px",
   maxWidth: "100%"
 };
 
