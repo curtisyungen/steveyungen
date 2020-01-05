@@ -1,0 +1,5 @@
+.donateBtn a,
+.donateBtn a:hover {
+  color: white;
+  text-decoration: none;
+}

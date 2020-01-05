@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import PatreonBtn from "../PatreonBtn/patreonBtn";
+import PatreonBtn from "../DonateBtns/patreonBtn";
+import PayPalBtn from "../DonateBtns/paypalBtn";
 import "./jumbotron.css";
 
 class Jumbotron extends Component {
@@ -8,6 +9,7 @@ class Jumbotron extends Component {
       <div className="jumbotron">
         {this.props.children}
         <PatreonBtn />
+        <PayPalBtn />
       </div>
     );
   }
