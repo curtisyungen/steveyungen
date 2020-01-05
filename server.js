@@ -1,22 +1,35 @@
 require("dotenv").config();
 
+import mailer from "./mailer";
+import bodyParser from "body-parser";
+
 const express = require("express");
-const routes = require("./routes/");
 const http = require("http").Server(app);
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(express.urlencoded({ extended: false }));
-app.use(express.json());
-app.use(express.static("client/build"));
-app.use(routes);
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
-http.listen(PORT, function () {
-    console.log(
-        "==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.",
-        PORT,
-        PORT
-    );
+app.post("/sendEmail", (req, res) => {
+  const { email = "", name = "", message = "" } = req.body;
+
+  mailer({ email, name, text: message })
+    .then(() => {
+      console.log("Sent message.");
+      res.redirect("/home");
+    })
+    .catch(err => {
+      console.log(`Error: ${err} Failed to send message.`);
+    });
+});
+
+http.listen(PORT, function() {
+  console.log(
+    "==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.",
+    PORT,
+    PORT
+  );
 });
 
 module.exports.app = app;
