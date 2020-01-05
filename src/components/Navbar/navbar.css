@@ -4,6 +4,8 @@
 }
 
 .navbar-brand {
+  color: white;
+  font-size: 28px;
   position: absolute;
   top: 0px;
 }

@@ -13,7 +13,7 @@ const photoStyle = {
 
 const modalStyle = {
   paddingTop: "30px",
-  maxHeight: "800px",
+  maxHeight: "700px",
   maxWidth: "100%"
 };
 
@@ -84,7 +84,7 @@ class Gallery extends Component {
         {/* ROW 1 */}
         <div className="row video-row justify-content-center text-center">
           <div className="col-md-8 col-xl-4">
-            <Video video={"https://www.youtube.com/embed/xEYHfnU0Z9o"} />
+            <Video video={"https://www.youtube.com/embed/xEYHfnU0Z9o?rel=0"} />
           </div>
           <div className="col-md-8 col-xl-4">
             <Video video={"https://www.youtube.com/embed/tgwyTx6I6sY"} />

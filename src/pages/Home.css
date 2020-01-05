@@ -40,7 +40,9 @@ hr {
   font-weight: 400;
   letter-spacing: 3px;
   line-height: 1.2em;
+  white-space: normal;
   width: 100%;
+  word-wrap: break-word;
 }
 
 .welcomeNote {

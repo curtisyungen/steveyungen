@@ -10,6 +10,15 @@ import AlohaSteve from "../images/aloha-friday-steve.jpg";
 import Steve1986 from "../images/steve-1986.jpg";
 import SteveGreg from "../images/steve-greg.jpg";
 import StevePili from "../images/steve-pili.jpg";
+import SteveSOSAChild from "../images/steve-sosa-child.jpg";
+import SteveCurtis from "../images/steve-and-curtis.jpg";
+import BassFace from "../images/steve-bass-face.jpg";
+import GenericBand4 from "../images/steve-generic-band-4.jpg";
+import SteveGuitars from "../images/steve-guitars.jpg";
+import Route66 from "../images/steve-route-66.jpg";
+import SteveSOSA from "../images/steve-sosa.jpg";
+import Ukulele from "../images/steve-ukulele.jpg";
+import Windmill from "../images/steve-windmill.jpg";
 
 export const galleryImages = {
   zeroAndSlicks: {
@@ -21,13 +30,13 @@ export const galleryImages = {
   genericBand1: {
     image: GenericBand1,
     title: "The Generic Band",
-    description: "Lydia Gonzalez and the Generic Band - Nyssa, OR, 1985"
+    description: "Nyssa, OR, 1985"
   },
 
   genericBand2: {
     image: GenericBand2,
     title: "The Generic Band",
-    description: "The Generic Band - Nyssa, OR, 1986"
+    description: "Nyssa, OR, 1986"
   },
 
   genericBand3: {
@@ -44,32 +53,20 @@ export const galleryImages = {
 
   turksSteve: {
     image: TurksSteve,
-    title: "Steve in Turks Caicos",
+    title: "Turks Caicos",
     description: "2017"
   },
 
   grandSteve: {
     image: GrandSteve,
-    title: "Steve at the Grand Canyon",
+    title: "Steve Next to a Large Pit",
     description: "March 2017"
-  },
-
-  lapSteve: {
-    image: LapSteve,
-    title: "Steve with Lap Steel",
-    description: "Florence, OR, 2015"
   },
 
   alohaSteve: {
     image: AlohaSteve,
-    title: "Steve at Aloha Friday",
+    title: "Aloha Friday",
     description: "Eugene, OR, November 2016"
-  },
-
-  steve1986: {
-    image: Steve1986,
-    title: "Steve Shredding",
-    description: "1986"
   },
 
   steveGreg: {
@@ -78,9 +75,74 @@ export const galleryImages = {
     description: ""
   },
 
+  route66: {
+    image: Route66,
+    title: "Route 66",
+    description: "Album cover material?"
+  },
+
+  steveGuitars: {
+    image: SteveGuitars,
+    title: "Guitar Display",
+    description: ""
+  },
+
   stevePili: {
     image: StevePili,
     title: "Steve and Pili",
     description: ""
+  },
+
+  steveSOSAChild: {
+    image: SteveSOSAChild,
+    title: "Jacksonville Farmer's Market",
+    description: "Southern Oregon Songwriters, 2019"
+  },
+
+  steveCurtis: {
+    image: SteveCurtis,
+    title: "Steve and Curtis",
+    description: "Jacksonville Farmer's Market, 2019"
+  },
+
+  // bassFace: {
+  //   image: BassFace,
+  //   title: "Bass face",
+  //   description: ""
+  // },
+
+  // genericBand4: {
+  //   image: GenericBand4,
+  //   title: "The Generic Band",
+  //   description: "1986"
+  // },
+  lapSteve: {
+    image: LapSteve,
+    title: "Steve with Lap Steel",
+    description: "Florence, OR, 2015"
+  },
+
+  steve1986: {
+    image: Steve1986,
+    title: "Steve Shredding",
+    description: "1986"
+  },
+
+  steveSOSA: {
+    image: SteveSOSA,
+    title: "Jacksonville Farmer's Market",
+    description: "Southern Oregon Songwriters, 2019"
+  },
+
+  // ukulele: {
+  //   image: Ukulele,
+  //   title: "Steve with Ukulele",
+  //   description: ""
+  // },
+
+  windmill: {
+    image: Windmill,
+    title: "(Windmilling) at the beach",
+    description: "Oregon coast"
   }
 };
