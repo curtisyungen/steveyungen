@@ -91,7 +91,7 @@ class Home extends Component {
             <Photo
               image={YouTubeLogo}
               style={logoStyle}
-              link="https://www.youtube.com/user/sugarbeet56"
+              link="https://www.youtube.com/user/sugarbeet56/videos"
               target="_blank"
             />
           </div>
