@@ -8,7 +8,7 @@ import "./Gallery.css";
 
 const photoStyle = {
   cursor: "pointer",
-  maxHeight: "300px",
+  maxHeight: "400px",
   maxWidth: "100%"
 };
 
