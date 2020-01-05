@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ScrollTop from "../ScrollTop/scrollTop";
-import DonateBtns from "../DonateBtns/donateBtns";
+import LeaveATip from "../DonateBtns/leaveATip";
 import "./footer.css";
 
 class Footer extends Component {
@@ -10,7 +10,7 @@ class Footer extends Component {
         <div className="footer-inner">
           <h5>Footer</h5>
         </div>
-        <DonateBtns source="footer" />
+        <LeaveATip source="footer" />
         <ScrollTop />
       </div>
     );
