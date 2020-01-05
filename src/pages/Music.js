@@ -45,14 +45,14 @@ class Music extends Component {
             setTitle={this.setTitle}
           />
           <SongList
-            listTitle={"Composed"}
-            list={composed}
+            listTitle={"Covers"}
+            list={covers}
             selectedTitle={title}
             setTitle={this.setTitle}
           />
           <SongList
-            listTitle={"Covers"}
-            list={covers}
+            listTitle={"Compositions"}
+            list={composed}
             selectedTitle={title}
             setTitle={this.setTitle}
           />
