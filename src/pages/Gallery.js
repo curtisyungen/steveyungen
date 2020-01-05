@@ -4,6 +4,7 @@ import Photo from "../components/Photo/photo";
 import Video from "../components/Video/video";
 import { aboutGallery } from "../content/text";
 import { galleryImages } from "../content/images";
+import "./Gallery.css";
 
 const photoStyle = {
   cursor: "pointer",
@@ -43,6 +44,38 @@ class Gallery extends Component {
     });
   };
 
+  // direction of -1: go to previous
+  // direction of 1: go to next
+  scrollToImage = direction => {
+    let imageArr = [];
+    let { modalImage } = this.state;
+    let currIdx = 0;
+
+    for (var i in galleryImages) {
+      if (galleryImages[i].image === modalImage) {
+        currIdx = imageArr.length;
+      }
+
+      imageArr.push(galleryImages[i]);
+    }
+
+    if (currIdx === imageArr.length - 1 && direction === 1) {
+      currIdx = -1;
+    }
+
+    if (currIdx === 0 && direction === -1) {
+      currIdx = imageArr.length;
+    }
+
+    let nextImage = imageArr[currIdx + 1 * direction];
+
+    this.setState({
+      modalImage: nextImage.image,
+      title: nextImage.title,
+      description: nextImage.description
+    });
+  };
+
   render() {
     const { openModal, modalImage, title, description } = this.state;
     return (
@@ -66,12 +99,28 @@ class Gallery extends Component {
         </div>
 
         <Modal open={openModal} onClose={this.closeModal}>
-          <Photo
-            image={modalImage}
-            style={modalStyle}
-            title={title}
-            description={description}
-          />
+          <div>
+            <Photo
+              image={modalImage}
+              style={modalStyle}
+              title={title}
+              description={description}
+            />
+            <div className="galleryScrollBtns">
+              <div
+                className="galleryScroll"
+                onClick={this.scrollToImage.bind(this, -1)}
+              >
+                PREV
+              </div>
+              <div
+                className="galleryScroll"
+                onClick={this.scrollToImage.bind(this, 1)}
+              >
+                NEXT
+              </div>
+            </div>
+          </div>
         </Modal>
 
         {/* VIDEOS */}

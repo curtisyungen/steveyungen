@@ -12,12 +12,12 @@ import SteveGreg from "../images/steve-greg.jpg";
 import StevePili from "../images/steve-pili.jpg";
 import SteveSOSAChild from "../images/steve-sosa-child.jpg";
 import SteveCurtis from "../images/steve-and-curtis.jpg";
-import BassFace from "../images/steve-bass-face.jpg";
-import GenericBand4 from "../images/steve-generic-band-4.jpg";
+// import BassFace from "../images/steve-bass-face.jpg";
+// import GenericBand4 from "../images/steve-generic-band-4.jpg";
 import SteveGuitars from "../images/steve-guitars.jpg";
 import Route66 from "../images/steve-route-66.jpg";
 import SteveSOSA from "../images/steve-sosa.jpg";
-import Ukulele from "../images/steve-ukulele.jpg";
+// import Ukulele from "../images/steve-ukulele.jpg";
 import Windmill from "../images/steve-windmill.jpg";
 
 export const galleryImages = {
