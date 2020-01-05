@@ -9,24 +9,22 @@ class DonateBtns extends Component {
     const { source } = this.props;
     return (
       <div className={`donateBtns db-${source}`}>
-        <div className="donateBtn patreonBtn btn btn-dark btn-sm">
-          <a
-            href={`https://www.patreon.com/bePatron?u=${PATREON_ID}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Patreon
-          </a>
-        </div>
-        <div className="donateBtn payPalBtn btn btn-dark btn-sm">
-          <a
-            href={`https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=${PAYPAL_BIZ_ID}&currency_code=USD&source=url`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            PayPal
-          </a>
-        </div>
+        <a
+          className="donateBtn patreonBtn btn btn-danger"
+          href={`https://www.patreon.com/bePatron?u=${PATREON_ID}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Patreon
+        </a>
+        <a
+          className="donateBtn payPalBtn btn btn-warning"
+          href={`https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=${PAYPAL_BIZ_ID}&currency_code=USD&source=url`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          PayPal
+        </a>
       </div>
     );
   }

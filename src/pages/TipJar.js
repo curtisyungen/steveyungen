@@ -11,14 +11,29 @@ const photoStyle = {
 class TipJar extends Component {
   render() {
     return (
-      <div className="tipJar text-center">
-        <Photo
-          image={tipJarImg}
-          title="Tip Jar"
-          description="Tips are very much appreciated!"
-          style={photoStyle}
-        />
-        <DonateBtns source="tipJar" />
+      <div className="container">
+        <div className="row">
+          <div className="col-xs-8 col-md-4">
+            <Photo image={tipJarImg} style={photoStyle} />
+          </div>
+          <div className="col-xs-8 col-md-4">
+            <p className="title">Take a Tip</p>
+            <ul className="tips description">
+              <li>
+                If you're having a hard time playing a piece, just play it
+                correctly.
+              </li>
+              <li>
+                If you're having a hard time playing a piece, just play it
+                correctly.
+              </li>
+            </ul>
+          </div>
+          <div className="col-xs-8 col-md-4 text-center">
+            <p className="title">Leave a Tip</p>
+            <DonateBtns source="tipJar" />
+          </div>
+        </div>
       </div>
     );
   }

@@ -5,7 +5,7 @@ class LeaveATip extends Component {
   render() {
     const { source } = this.props;
     return (
-      <div className={`donateBtn patreonBtn db-${source} btn btn-dark btn-sm`}>
+      <div className={`donateBtn db-${source} btn btn-dark btn-sm`}>
         <a href="/tipJar">Leave a Tip</a>
       </div>
     );

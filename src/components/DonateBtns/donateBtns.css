@@ -1,11 +1,12 @@
 .donateBtn {
+  color: black !important;
   font-size: 14px;
   margin-right: 3px;
 }
 
 .donateBtn a,
 .donateBtn a:hover {
-  color: white;
+  color: black !important;
   text-decoration: none;
 }
 
@@ -19,6 +20,20 @@
   bottom: 15px;
   position: absolute;
   right: 50px;
+}
+
+.patreonBtn {
+  background: #f96854;
+}
+
+.payPalBtn {
+  background: rgb(236, 179, 35);
+}
+
+.patreonBtn,
+.payPalBtn {
+  border: 0px;
+  width: 150px;
 }
 
 @media only screen and (max-width: 991px) {
