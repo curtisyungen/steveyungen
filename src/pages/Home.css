@@ -42,7 +42,6 @@ body {
 .music-container,
 .gallery-container {
   font-family: "Cabin", "sans-serif";
-  max-width: 100% !important;
   padding: 40px 60px !important;
 
   -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
