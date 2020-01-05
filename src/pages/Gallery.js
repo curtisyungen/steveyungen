@@ -1,21 +1,9 @@
 import React, { Component } from "react";
+import Modal from "react-responsive-modal";
 import Photo from "../components/Photo/photo";
 import Video from "../components/Video/video";
 import { aboutGallery } from "../content/text";
-import ZeroAndSlicks from "../images/zero-and-the-slicks.jpg";
-import GenericBand1 from "../images/the-generic-band.jpg";
-import GenericBand2 from "../images/the-generic-band-1986.jpg";
-import GenericBand3 from "../images/red-shirt-band.jpg";
-import LeiAloha from "../images/the-lei-aloha-serenaders.jpg";
-import TurksSteve from "../images/steve-turks.jpg";
-import GrandSteve from "../images/steve-grand-canyon-guitar.jpg";
-import LapSteve from "../images/lap-steve.jpg";
-import AlohaSteve from "../images/aloha-friday-steve.jpg";
-import Modal from "react-responsive-modal";
-import Steve1986 from "../images/steve-1986.jpg";
-import SteveBand from "../images/steve-band.jpg";
-import SteveGreg from "../images/steve-greg.jpg";
-import StevePili from "../images/steve-pili.jpg";
+import { galleryImages } from "../content/images";
 
 const photoStyle = {
   cursor: "pointer",
@@ -33,7 +21,9 @@ class Gallery extends Component {
     super(props);
     this.state = {
       openModal: false,
-      modalImage: null
+      modalImage: null,
+      title: null,
+      description: null
     };
   }
 
@@ -51,7 +41,7 @@ class Gallery extends Component {
   };
 
   render() {
-    const { openModal, modalImage } = this.state;
+    const { openModal, modalImage, title, description } = this.state;
     return (
       <div className="container gallery-container">
         {/* PHOTOS */}
@@ -61,92 +51,21 @@ class Gallery extends Component {
           <div className="spacer"></div>
         </div>
 
-        {/* ROW 1 */}
-        <div className="row row-style justify-content-center text-center">
-          <div
-            className="col-sm-4 col-md-2"
-            onClick={this.openModal.bind(this, ZeroAndSlicks)}
-          >
-            <Photo image={ZeroAndSlicks} style={photoStyle} />
-          </div>
-          <div
-            className="col-sm-4 col-md-2"
-            onClick={this.openModal.bind(this, GenericBand1)}
-          >
-            <Photo image={GenericBand1} style={photoStyle} />
-          </div>
-          <div
-            className="col-sm-4 col-md-2"
-            onClick={this.openModal.bind(this, GenericBand2)}
-          >
-            <Photo image={GenericBand2} style={photoStyle} />
-          </div>
-          <div
-            className="col-sm-4 col-md-2"
-            onClick={this.openModal.bind(this, GenericBand3)}
-          >
-            <Photo image={GenericBand3} style={photoStyle} />
-          </div>
-        </div>
-
-        {/* ROW 2 */}
-        <div className="row row-style justify-content-center text-center">
-          <div
-            className="col-sm-4 col-md-2"
-            onClick={this.openModal.bind(this, StevePili)}
-          >
-            <Photo image={StevePili} style={photoStyle} />
-          </div>
-          <div
-            className="col-sm-4 col-md-2"
-            onClick={this.openModal.bind(this, LeiAloha)}
-          >
-            <Photo image={LeiAloha} style={photoStyle} />
-          </div>
-          <div
-            className="col-sm-4 col-md-2"
-            onClick={this.openModal.bind(this, TurksSteve)}
-          >
-            <Photo image={TurksSteve} style={photoStyle} />
-          </div>
-          <div
-            className="col-sm-4 col-md-2"
-            onClick={this.openModal.bind(this, SteveGreg)}
-          >
-            <Photo image={SteveGreg} style={photoStyle} />
-          </div>
-        </div>
-
-        {/* ROW 3 */}
-        <div className="row row-style justify-content-center text-center">
-          <div
-            className="col-sm-4 col-md-2"
-            onClick={this.openModal.bind(this, Steve1986)}
-          >
-            <Photo image={Steve1986} style={photoStyle} />
-          </div>
-          <div
-            className="col-sm-4 col-md-2"
-            onClick={this.openModal.bind(this, GrandSteve)}
-          >
-            <Photo image={GrandSteve} style={photoStyle} />
-          </div>
-          <div
-            className="col-sm-4 col-md-2"
-            onClick={this.openModal.bind(this, LapSteve)}
-          >
-            <Photo image={LapSteve} style={photoStyle} />
-          </div>
-          <div
-            className="col-sm-4 col-md-2"
-            onClick={this.openModal.bind(this, AlohaSteve)}
-          >
-            <Photo image={AlohaSteve} style={photoStyle} />
-          </div>
+        <div className="row justify-content-center text-center ">
+          {Object.keys(galleryImages).map(image => (
+            <div className="col-sm-8 col-md-4 col-xl-2">
+              <Photo image={galleryImages[image].image} style={photoStyle} />
+            </div>
+          ))}
         </div>
 
         <Modal open={openModal} onClose={this.closeModal}>
-          <Photo image={modalImage} style={modalStyle} />
+          <Photo
+            image={modalImage}
+            style={modalStyle}
+            title={title}
+            description={description}
+          />
         </Modal>
 
         {/* VIDEOS */}

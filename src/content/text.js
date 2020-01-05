@@ -12,4 +12,4 @@ records or the radio. Dad liked big band music and quirky, novelty
 music, from performers such as Spike Jones and Stan Freberg. Mom
 loved old time hymns and church choral music with vocal harmonies.`;
 
-export const aboutGallery = `The pictures in this gallery are from different musical periods in my life.   They’ve all had their fun times!`;
+export const aboutGallery = `The pictures and videos in this gallery are from different musical periods in my life.   They’ve all had their fun times!`;
