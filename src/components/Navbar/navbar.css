@@ -38,8 +38,9 @@
 
 .steveyungen {
   color: white !important;
-  font-family: "Cabin", "sans-serif";
-  font-size: 48px;
+  font-family: "Neucha", "sans-serif"; /* Neucha, Schoolbell, Delius, Handlee */
+  font-size: 54px;
+  letter-spacing: 3px;
 }
 
 .welcomeNote {
