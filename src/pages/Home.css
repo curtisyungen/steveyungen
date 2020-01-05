@@ -14,7 +14,15 @@ body {
   line-height: 28px;
 }
 
-.fadeIn {
+.fadeIn-fast {
+  -webkit-animation: fadein 0.5s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 0.5s; /* Firefox < 16 */
+  -ms-animation: fadein 0.5s; /* Internet Explorer */
+  -o-animation: fadein 0.5s; /* Opera < 12.1 */
+  animation: fadein 0.5s;
+}
+
+.fadeIn-1 {
   -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 1s; /* Firefox < 16 */
   -ms-animation: fadein 1s; /* Internet Explorer */
@@ -44,11 +52,11 @@ body {
   font-family: "Cabin", "sans-serif";
   padding: 40px 60px !important;
 
-  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 1s; /* Firefox < 16 */
-  -ms-animation: fadein 1s; /* Internet Explorer */
-  -o-animation: fadein 1s; /* Opera < 12.1 */
-  animation: fadein 1s;
+  -webkit-animation: fadein 0.25s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 0.25s; /* Firefox < 16 */
+  -ms-animation: fadein 0.25s; /* Internet Explorer */
+  -o-animation: fadein 0.25s; /* Opera < 12.1 */
+  animation: fadein 0.25s;
 }
 
 hr {
