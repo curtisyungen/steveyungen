@@ -36,7 +36,7 @@ class Home extends Component {
 
         {/* CATEGORIES */}
         <div className="row row-style justify-content-center text-center">
-          <div className="spacer" />
+          <div className="col-sm-12 spacer" />
           {/* Music */}
           <div className="col-sm-12 col-md-4">
             <Photo
@@ -67,7 +67,7 @@ class Home extends Component {
               description={"About Steve and his music."}
             />
           </div>
-          <div className="spacer" />
+          <div className="col-sm-12 spacer" />
         </div>
 
         {/* SOCIAL MEDIA */}
@@ -98,13 +98,13 @@ class Home extends Component {
               target="_blank"
             />
           </div>
-          <div className="spacer" />
+          <div className="col-sm-12 spacer" />
         </div>
 
         <hr />
 
         <div className="row row-style justify-content-center text-center">
-          <div className="spacer" />
+          <div className="col-sm-12 spacer" />
           <div className="col-md-12">Row 3 Col 1</div>
         </div>
       </div>

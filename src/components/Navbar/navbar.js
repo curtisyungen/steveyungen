@@ -26,7 +26,7 @@ class Navbar extends Component {
             aria-controls="navbarNav"
             aria-expanded="false"
           >
-            <span class="black-text">
+            <span className="black-text">
               <FontAwesomeIcon icon={faBars} className="fa-2x faBars" />
             </span>
           </button>
