@@ -7,7 +7,7 @@ class Video extends Component {
     return (
       <iframe
         allowfullscreen
-        className="video fadeIn-2"
+        className="video fadeIn-3"
         frameborder="0"
         src={video}
       />

@@ -2,7 +2,7 @@
   color: white;
   cursor: pointer;
   position: absolute;
-  right: 10px;
+  right: 20px;
   top: 10px;
 }
 
@@ -17,6 +17,7 @@
   margin: auto;
   max-width: 100%;
   text-align: center;
+  white-space: normal;
 }
 
 #navbarNav {
@@ -38,30 +39,28 @@
 .welcomeNote {
   font-family: "Signika", "sans-serif";
   font-size: 20px;
-  max-width: 100%;
+  margin: auto;
+  max-width: 75%;
   text-align: center;
   white-space: normal;
   word-wrap: break-word;
 }
 
-@media only screen and (max-width: 991px) {
-  #navbarNav {
-    padding: 0.75rem;
-    right: 10px;
-    top: 50px;
-  }
-
+@media only screen and (max-width: 520px) {
   .navbar-brand {
-    bottom: 0px;
-    font-size: 26px;
-    left: 15px;
-    margin-top: -15px;
-    padding: 0px;
-    position: absolute;
-    top: 10px;
+    font-size: 36px;
+    margin-top: auto;
   }
 
   .welcomeNote {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  #navbarNav {
+    padding: 0.75rem;
+    right: 10px;
+    top: 50px;
   }
 }
