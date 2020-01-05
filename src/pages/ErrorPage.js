@@ -1,15 +1,19 @@
 import React, { Component } from "react";
-
-const errorStyle = {
-  height: "50vh",
-  minHeight: "100%"
-};
+import Photo from "../components/Photo/photo";
+import BassFace from "../images/steve-bass-face.jpg";
 
 class ErrorPage extends Component {
   render() {
     return (
-      <div className="errorPage" style={errorStyle}>
-        Page not found.
+      <div className="text-center">
+        <div className="spacer" />
+        <Photo
+          image={BassFace}
+          title="Page Not Found."
+          description="Sorry, we're not seeing this page in our directory. Click the image to go Home."
+          link="/home"
+        />
+        <div className="spacer" />
       </div>
     );
   }
