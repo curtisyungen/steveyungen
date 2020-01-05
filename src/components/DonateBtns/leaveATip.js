@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./donateBtns.css";
-import { withRouter } from "react-router-dom";
 
 class LeaveATip extends Component {
   constructor(props) {
@@ -26,7 +25,7 @@ class LeaveATip extends Component {
         btn btn-outline-light btn-sm`}
         href="/tipJar"
       >
-        Leave a Tip
+        Tip Jar
       </a>
     );
   }
