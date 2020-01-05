@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ScrollTop from "../ScrollTop/scrollTop";
 import "./footer.css";
 
 class Footer extends Component {
@@ -8,6 +9,7 @@ class Footer extends Component {
         <div className="footer-inner">
           <h5>Footer</h5>
         </div>
+        <ScrollTop />
       </div>
     );
   }

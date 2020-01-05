@@ -2,6 +2,7 @@
   background: rgb(17, 17, 17);
   color: white;
   height: 300px;
+  position: relative;
   width: 100vw;
 }
 

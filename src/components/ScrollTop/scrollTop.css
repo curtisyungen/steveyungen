@@ -1,0 +1,22 @@
+.scrollTop {
+  background: black;
+  border-radius: 25px;
+  bottom: 50px;
+  color: white;
+  cursor: pointer;
+  height: 48px;
+  position: absolute;
+  right: 50px;
+  width: 48px;
+  z-index: 1000;
+}
+
+.scrollTop:hover {
+  background: white;
+}
+
+.arrowUp:hover {
+  border: 3px solid white;
+  border-radius: 25px;
+  color: black;
+}
