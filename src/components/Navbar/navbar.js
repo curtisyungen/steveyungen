@@ -1,7 +1,12 @@
 import React, { Component } from "react";
 import Jumbotron from "../Jumbotron/jumbotron";
 import JumbotronImage from "../../images/crater-lake.jpg";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import "./navbar.css";
+
+library.add(faBars);
 
 class Navbar extends Component {
   render() {
@@ -12,15 +17,18 @@ class Navbar extends Component {
             <span>STEVE YUNGEN</span>
           </a>
           <button
-            className="navbar-toggler"
+            class="navbar-toggler"
             type="button"
             data-toggle="collapse"
             data-target="#navbarNav"
             aria-controls="navbarNav"
             aria-expanded="false"
           >
-            <span className="navbar-toggler-icon"></span>
+            <span class="black-text">
+              <FontAwesomeIcon icon={faBars} className="fa-2x faBars" />
+            </span>
           </button>
+
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">

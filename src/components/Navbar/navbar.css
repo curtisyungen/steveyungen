@@ -1,3 +1,11 @@
+.navbar-toggler {
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
 .navbar {
   background-repeat: no-repeat;
   height: 250px;
@@ -18,9 +26,18 @@
 
 .nav-link,
 .navbar-brand {
+  color: white !important;
   text-decoration: none !important;
 }
 
 .nav-link:hover {
   color: #252525 !important;
+}
+
+@media only screen and (max-width: 991px) {
+  #navbarNav {
+    padding: 0.75rem;
+    right: 10px;
+    top: 50px;
+  }
 }
