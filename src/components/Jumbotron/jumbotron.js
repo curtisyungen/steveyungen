@@ -7,7 +7,7 @@ class Jumbotron extends Component {
     return (
       <div className="jumbotron">
         {this.props.children}
-        <DonateBtns />
+        <DonateBtns source={"jumbotron"} />
       </div>
     );
   }

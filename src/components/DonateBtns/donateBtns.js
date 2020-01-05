@@ -6,8 +6,9 @@ const PAYPAL_BIZ_ID = "NAY72ENRLHF6L";
 
 class DonateBtns extends Component {
   render() {
+    const { source } = this.props;
     return (
-      <div className="donateBtns">
+      <div className={`donateBtns db-${source}`}>
         <div className="donateBtn patreonBtn btn btn-dark btn-sm">
           <a
             href={`https://www.patreon.com/bePatron?u=${PATREON_ID}`}
