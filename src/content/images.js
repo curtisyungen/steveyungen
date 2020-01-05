@@ -14,8 +14,8 @@ import StevePili from "../images/steve-pili.jpg";
 export const galleryImages = {
   zeroAndSlicks: {
     image: ZeroAndSlicks,
-    title: "Zero and the Slicks, 1973",
-    description: "Zero and the Slicks, 1973"
+    title: "Zero and the Slicks",
+    description: "1973"
   },
 
   genericBand1: {
@@ -44,14 +44,14 @@ export const galleryImages = {
 
   turksSteve: {
     image: TurksSteve,
-    title: "Steve in Turks Caicos, 2017",
-    description: ""
+    title: "Steve in Turks Caicos",
+    description: "2017"
   },
 
   grandSteve: {
     image: GrandSteve,
-    title: "Steve",
-    description: "Grand Canyon National Park, March 2017"
+    title: "Steve at the Grand Canyon",
+    description: "March 2017"
   },
 
   lapSteve: {
@@ -68,8 +68,8 @@ export const galleryImages = {
 
   steve1986: {
     image: Steve1986,
-    title: "Steve in 1986",
-    description: ""
+    title: "Steve Shredding",
+    description: "1986"
   },
 
   steveGreg: {

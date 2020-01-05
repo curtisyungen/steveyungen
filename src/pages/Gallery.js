@@ -30,7 +30,9 @@ class Gallery extends Component {
   openModal = modalImage => {
     this.setState({
       openModal: true,
-      modalImage
+      modalImage: galleryImages[modalImage].image,
+      title: galleryImages[modalImage].title,
+      description: galleryImages[modalImage].description
     });
   };
 
@@ -53,7 +55,10 @@ class Gallery extends Component {
 
         <div className="row justify-content-center text-center ">
           {Object.keys(galleryImages).map(image => (
-            <div className="col-sm-8 col-md-4 col-xl-2">
+            <div
+              className="col-sm-8 col-md-4 col-xl-2"
+              onClick={this.openModal.bind(this, image)}
+            >
               <Photo image={galleryImages[image].image} style={photoStyle} />
             </div>
           ))}
