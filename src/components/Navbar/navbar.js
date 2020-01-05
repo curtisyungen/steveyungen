@@ -14,7 +14,7 @@ class Navbar extends Component {
       <Jumbotron background={"gray"}>
         <nav className="navbar navbar-expand-lg text-right">
           <a className="navbar-brand" href="/home">
-            <p>STEVE YUNGEN</p>
+            <p className="steveyungen">STEVE YUNGEN</p>
             <p className="welcomeNote">{welcome}</p>
           </a>
           <button

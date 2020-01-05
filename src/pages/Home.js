@@ -14,7 +14,7 @@ const photoStyle = {
   border: "1px solid black",
   cursor: "pointer",
   maxHeight: "400px",
-  maxWidth: "400px"
+  maxWidth: "100%"
 };
 
 const logoStyle = {

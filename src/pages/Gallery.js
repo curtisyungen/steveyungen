@@ -14,7 +14,7 @@ const photoStyle = {
 
 const modalStyle = {
   paddingTop: "30px",
-  maxHeight: "700px",
+  maxHeight: "65vh",
   maxWidth: "100%"
 };
 
