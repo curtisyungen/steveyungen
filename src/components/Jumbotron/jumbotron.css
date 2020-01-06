@@ -32,18 +32,10 @@
   background-size: cover;
 }
 
-/* .jumbotron-music {
-  background: black;
-  background-image: url("../../images/hawaii/sunset.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 30%;
-} */
-
 .jumbotron-tipJar {
   background: black;
-  background-image: url("../../images/hawaii/sunset.png");
-  background-position: center center;
+  background-image: url("../../images/hawaii/some-mountain-2.jpg");
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: 30%;
+  background-size: cover;
 }
