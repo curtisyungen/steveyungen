@@ -3,7 +3,6 @@ import Photo from "../components/Photo/photo";
 import Video from "../components/Video/video";
 import { aboutGallery } from "../content/text";
 import { galleryImages } from "../content/images";
-import "./Gallery.css";
 
 const photoStyle = {
   cursor: "pointer",

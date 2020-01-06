@@ -72,6 +72,7 @@ class Photo extends Component {
   render() {
     const { image, hasModal, link, target } = this.props;
     const { openModal, modalImage, title, description } = this.state;
+
     return (
       <Fragment>
         <a href={link} className="photo fadeIn-fast" target={target}>
@@ -104,15 +105,15 @@ class Photo extends Component {
           </div>
 
           {this.props.scrollableImages ? (
-            <div className="modal-photo-scroll-btns">
+            <div className="modalScrollBtns">
               <div
-                className="galleryScroll"
+                className="modalScroll"
                 onClick={this.scrollToImage.bind(this, -1)}
               >
                 PREV
               </div>
               <div
-                className="galleryScroll"
+                className="modalScroll"
                 onClick={this.scrollToImage.bind(this, 1)}
               >
                 NEXT

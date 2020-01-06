@@ -1,3 +1,22 @@
+.modalScroll {
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Roboto", "sans-serif";
+  font-size: 14px;
+  margin-right: 20px;
+}
+
+.modalScroll:hover {
+  color: rgb(30, 30, 30);
+}
+
+.modalScrollBtns {
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+
 .photo,
 .photo:hover {
   color: black;
