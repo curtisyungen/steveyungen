@@ -5,8 +5,10 @@ import alohaFriday from "../images/Aloha-Friday-SJY-11-17-2017.jpg";
 class Events extends Component {
   render() {
     return (
-      <div>
-        <Photo image={alohaFriday} />
+      <div className="container events-container">
+        <div className="row row-style justify-content-center text-center">
+          <Photo image={alohaFriday} />
+        </div>
       </div>
     );
   }

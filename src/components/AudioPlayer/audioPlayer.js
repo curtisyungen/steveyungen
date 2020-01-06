@@ -7,6 +7,7 @@ class AudioPlayer extends Component {
     return (
       <div className="iframe-container">
         <iframe
+          title="soundcloudPlayer"
           allow="autoplay"
           height="300"
           width="100%"

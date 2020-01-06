@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import DonateBtns from "../DonateBtns/donateBtns";
 import LeaveATip from "../DonateBtns/leaveATip";
 import "./jumbotron.css";
 

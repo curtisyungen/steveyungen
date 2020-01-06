@@ -6,6 +6,7 @@ class Video extends Component {
     const { video } = this.props;
     return (
       <iframe
+        title="youtubePlayer"
         allowfullscreen
         className="video fadeIn-3"
         frameborder="0"
