@@ -2,10 +2,11 @@ import React, { Component } from "react";
 import Photo from "../components/Photo/photo";
 import alohaFriday from "../images/events/Aloha-Friday-SJY-11-17-2017.jpg";
 import sosaPoster from "../images/events/sosa-poster.jpg";
+import rollingStone from "../images/events/rolling-stone.jpg";
 import SteveSOSACutOut from "../images/steve/steve-sosa-cutout-remove-logo.png";
 import "./Events.css";
 
-const eventPhotos = [alohaFriday, sosaPoster];
+const eventPhotos = [alohaFriday, sosaPoster, rollingStone];
 
 const photoStyle = {
   maxHeight: "300px",
@@ -35,6 +36,7 @@ class Events extends Component {
             </div>
           ))}
         </div>
+        <div className="spacer" />
 
         <div className="steve-sosa-cutout">
           <Photo image={SteveSOSACutOut} style={cutoutStyle} />
