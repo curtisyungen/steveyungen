@@ -5,7 +5,7 @@ class Contact extends Component {
     return (
       <div className="container contact-container">
         <div className="row row-style justify-content-center text-center">
-          syungen@gmail.com
+          <a href="mailto:syungen@yahoo.com">syungen@yahoo.com</a>
         </div>
       </div>
     );
