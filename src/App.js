@@ -6,7 +6,7 @@ import Music from "./pages/Music";
 import Gallery from "./pages/Gallery";
 import Events from "./pages/Events";
 import Contact from "./pages/Contact";
-import Support from "./pages/TipJar";
+import Support from "./pages/Support";
 import ErrorPage from "./pages/ErrorPage";
 import Footer from "./components/Footer/footer";
 

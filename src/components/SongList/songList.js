@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Photo from "../Photo/photo";
+import Logo from "../Logo/logo";
 import GuitarSVG from "../../images/logos/guitar-silhouette.svg";
 import FlowerSVG from "../../images/logos/flower.svg";
 import InstrumentsSVG from "../../images/logos/instruments.svg";
@@ -36,7 +36,7 @@ class SongList extends Component {
         break;
     }
 
-    return <Photo image={svgImage} style={svgStyle} />;
+    return <Logo image={svgImage} style={svgStyle} />;
   };
   render() {
     const { listTitle, list, selectedTitle } = this.props;

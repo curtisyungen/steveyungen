@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Modal from "react-responsive-modal";
 import Photo from "../components/Photo/photo";
 import Video from "../components/Video/video";
 import { aboutGallery } from "../content/text";
@@ -12,72 +11,8 @@ const photoStyle = {
   maxWidth: "100%"
 };
 
-const modalStyle = {
-  paddingTop: "30px",
-  maxHeight: "65vh",
-  maxWidth: "100%"
-};
-
 class Gallery extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      openModal: false,
-      modalImage: null,
-      title: null,
-      description: null
-    };
-  }
-
-  openModal = modalImage => {
-    this.setState({
-      openModal: true,
-      modalImage: galleryImages[modalImage].image,
-      title: galleryImages[modalImage].title,
-      description: galleryImages[modalImage].description
-    });
-  };
-
-  closeModal = () => {
-    this.setState({
-      openModal: false
-    });
-  };
-
-  // direction of -1: go to previous
-  // direction of 1: go to next
-  scrollToImage = direction => {
-    let imageArr = [];
-    let { modalImage } = this.state;
-    let currIdx = 0;
-
-    for (var i in galleryImages) {
-      if (galleryImages[i].image === modalImage) {
-        currIdx = imageArr.length;
-      }
-
-      imageArr.push(galleryImages[i]);
-    }
-
-    if (currIdx === imageArr.length - 1 && direction === 1) {
-      currIdx = -1;
-    }
-
-    if (currIdx === 0 && direction === -1) {
-      currIdx = imageArr.length;
-    }
-
-    let nextImage = imageArr[currIdx + 1 * direction];
-
-    this.setState({
-      modalImage: nextImage.image,
-      title: nextImage.title,
-      description: nextImage.description
-    });
-  };
-
   render() {
-    const { openModal, modalImage, title, description } = this.state;
     return (
       <div className="container gallery-container">
         {/* PHOTOS */}
@@ -89,40 +24,18 @@ class Gallery extends Component {
 
         <div className="row justify-content-center text-center ">
           {Object.keys(galleryImages).map(image => (
-            <div
-              key={image}
-              className="col-sm-8 col-md-4 col-xl-2"
-              onClick={this.openModal.bind(this, image)}
-            >
-              <Photo image={galleryImages[image].image} style={photoStyle} />
+            <div key={image} className="col-sm-8 col-md-4 col-xl-2">
+              <Photo
+                image={galleryImages[image].image}
+                title={galleryImages[image].title}
+                description={galleryImages[image].description}
+                style={photoStyle}
+                hasModal
+                scrollableImages={galleryImages}
+              />
             </div>
           ))}
         </div>
-
-        <Modal open={openModal} onClose={this.closeModal}>
-          <div>
-            <Photo
-              image={modalImage}
-              style={modalStyle}
-              title={title}
-              description={description}
-            />
-            <div className="galleryScrollBtns">
-              <div
-                className="galleryScroll"
-                onClick={this.scrollToImage.bind(this, -1)}
-              >
-                PREV
-              </div>
-              <div
-                className="galleryScroll"
-                onClick={this.scrollToImage.bind(this, 1)}
-              >
-                NEXT
-              </div>
-            </div>
-          </div>
-        </Modal>
 
         {/* VIDEOS */}
         <div className="row row-style justify-content-center text-center aboutMusic">

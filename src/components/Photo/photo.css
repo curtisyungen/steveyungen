@@ -1,6 +1,7 @@
 .photo,
 .photo:hover {
   color: black;
+  cursor: pointer;
   text-decoration: none;
   word-wrap: break-word;
 }

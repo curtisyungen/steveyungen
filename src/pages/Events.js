@@ -5,17 +5,17 @@ import sosaPoster from "../images/events/sosa-poster.jpg";
 import SteveSOSACutOut from "../images/steve/steve-sosa-cutout.png";
 import "./Events.css";
 
-const eventPhotos = [alohaFriday, sosaPoster];
+const eventPhotos = [alohaFriday, sosaPoster, alohaFriday, sosaPoster];
 
 const photoStyle = {
-  maxHeight: "400px",
+  maxHeight: "300px",
   maxWidth: "100%"
 };
 
 const cutoutStyle = {
   bottom: "0",
   left: "0",
-  maxHeight: "75%",
+  maxHeight: "100%",
   position: "absolute",
   zIndex: "-1"
 };
@@ -24,13 +24,21 @@ class Events extends Component {
   render() {
     return (
       <div className="container events-container">
-        <div className="row row-style justify-content-center text-center">
+        <div className="row justify-content-center text-center">
+          <p className="title large-title">EVENTS</p>
+        </div>
+
+        <div className="row justify-content-center text-center mt-4">
           {eventPhotos.map(event => (
-            <Photo image={event} style={photoStyle} />
+            <div className="col-xs-12 col-md-2">
+              <Photo image={event} style={photoStyle} hasModal />
+            </div>
           ))}
         </div>
 
-        <Photo image={SteveSOSACutOut} style={cutoutStyle} />
+        <div className="steve-sosa-cutout">
+          <Photo image={SteveSOSACutOut} style={cutoutStyle} />
+        </div>
       </div>
     );
   }
