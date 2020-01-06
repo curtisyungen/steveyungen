@@ -57,6 +57,11 @@ class Navbar extends Component {
                   CONTACT
                 </a>
               </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/support">
+                  SUPPORT
+                </a>
+              </li>
             </ul>
           </div>
         </nav>

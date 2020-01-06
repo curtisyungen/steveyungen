@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import LeaveATip from "../DonateBtns/leaveATip";
 import "./jumbotron.css";
 
 class Jumbotron extends Component {
@@ -22,7 +21,6 @@ class Jumbotron extends Component {
     return (
       <div className={`jumbotron jumbotron-${pathname}`}>
         {this.props.children}
-        <LeaveATip source="jumbotron" />
       </div>
     );
   }
