@@ -23,6 +23,14 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+/* 
+.jumbotron-events {
+  background: white;
+  background-image: url("../../images/steve/steve-grand-canyon-artsy.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
 
 .jumbotron-music {
   background: white;
