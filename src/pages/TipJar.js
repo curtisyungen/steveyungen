@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Photo from "../components/Photo/photo";
 import DonateBtns from "../components/DonateBtns/donateBtns";
-import tipJarImg from "../images/tip-jar.jpg";
+import tipJarImg from "../images/steve/tip-jar.jpg";
 import { tipJarText } from "../content/text";
 
 const photoStyle = {

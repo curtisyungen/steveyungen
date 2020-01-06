@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import Photo from "../components/Photo/photo";
 import Logo from "../components/Logo/logo";
-import MusicImage from "../images/steve-crater-lake.jpg";
-import EventsImage from "../images/Aloha-Friday-SJY-11-17-2017.jpg";
-import GalleryImage from "../images/steve-1979.jpg";
-import SoundCloudLogo from "../images/soundcloud.svg";
-import YouTubeLogo from "../images/youtube.svg";
-import FacebookLogo from "../images/facebook.svg";
+import MusicImage from "../images/steve/steve-crater-lake.jpg";
+import EventsImage from "../images/steve/Aloha-Friday-SJY-11-17-2017.jpg";
+import GalleryImage from "../images/steve/steve-1979.jpg";
+import SoundCloudLogo from "../images/logos/soundcloud.svg";
+import YouTubeLogo from "../images/logos/youtube.svg";
+import FacebookLogo from "../images/logos/facebook.svg";
 import { aboutSteve } from "../content/text";
 import "./Home.css";
 

@@ -1,24 +1,24 @@
-import ZeroAndSlicks from "../images/zero-and-the-slicks.jpg";
-import GenericBand1 from "../images/the-generic-band.jpg";
-import GenericBand2 from "../images/the-generic-band-1986.jpg";
-import GenericBand3 from "../images/red-shirt-band.jpg";
-import LeiAloha from "../images/the-lei-aloha-serenaders.jpg";
-import TurksSteve from "../images/steve-turks.jpg";
-import GrandSteve from "../images/steve-grand-canyon-guitar.jpg";
-import LapSteve from "../images/lap-steve.jpg";
-import AlohaSteve from "../images/aloha-friday-steve.jpg";
-import Steve1986 from "../images/steve-1986.jpg";
-import SteveGreg from "../images/steve-greg.jpg";
-import StevePili from "../images/steve-pili.jpg";
-import SteveSOSAChild from "../images/steve-sosa-child.jpg";
-import SteveCurtis from "../images/steve-and-curtis.jpg";
-// import BassFace from "../images/steve-bass-face.jpg";
-// import GenericBand4 from "../images/steve-generic-band-4.jpg";
-import SteveGuitars from "../images/steve-guitars.jpg";
-import Route66 from "../images/steve-route-66.jpg";
-import SteveSOSA from "../images/steve-sosa.jpg";
-// import Ukulele from "../images/steve-ukulele.jpg";
-import Windmill from "../images/steve-windmill.jpg";
+import ZeroAndSlicks from "../images/steve/zero-and-the-slicks.jpg";
+import GenericBand1 from "../images/steve/the-generic-band.jpg";
+import GenericBand2 from "../images/steve/the-generic-band-1986.jpg";
+import GenericBand3 from "../images/steve/red-shirt-band.jpg";
+import LeiAloha from "../images/steve/the-lei-aloha-serenaders.jpg";
+import TurksSteve from "../images/steve/steve-turks.jpg";
+import GrandSteve from "../images/steve/steve-grand-canyon-guitar.jpg";
+import LapSteve from "../images/steve/lap-steve.jpg";
+import AlohaSteve from "../images/steve/aloha-friday-steve.jpg";
+import Steve1986 from "../images/steve/steve-1986.jpg";
+import SteveGreg from "../images/steve/steve-greg.jpg";
+import StevePili from "../images/steve/steve-pili.jpg";
+import SteveSOSAChild from "../images/steve/steve-sosa-child.jpg";
+import SteveCurtis from "../images/steve/steve-and-curtis.jpg";
+// import BassFace from "../images/steve/steve-bass-face.jpg";
+// import GenericBand4 from "../images/steve/steve-generic-band-4.jpg";
+import SteveGuitars from "../images/steve/steve-guitars.jpg";
+import Route66 from "../images/steve/steve-route-66.jpg";
+import SteveSOSA from "../images/steve/steve-sosa.jpg";
+// import Ukulele from "../images/steve/steve-ukulele.jpg";
+import Windmill from "../images/steve/steve-windmill.jpg";
 
 export const galleryImages = {
   zeroAndSlicks: {

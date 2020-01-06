@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Photo from "../components/Photo/photo";
-import BassFace from "../images/steve-bass-face.jpg";
+import BassFace from "../images/steve/steve-bass-face.jpg";
 
 class ErrorPage extends Component {
   render() {
