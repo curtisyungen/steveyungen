@@ -16,11 +16,22 @@
   max-width: 500px;
 }
 
+@media only screen and (max-width: 1200px) {
+  .contactForm {
+    max-width: 400px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .contact {
     padding: 0px 15px;
   }
+
   .contact img {
     display: none;
+  }
+
+  .contactForm {
+    max-width: 100%;
   }
 }

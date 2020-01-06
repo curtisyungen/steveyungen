@@ -7,7 +7,8 @@ const photoStyle = {
   bottom: "0",
   left: "0",
   maxHeight: "75%",
-  position: "absolute"
+  position: "absolute",
+  zIndex: "-1"
 };
 
 class Contact extends Component {
@@ -76,7 +77,7 @@ class Contact extends Component {
               ></textarea>
             </div>
             <button type="submit" className="btn btn-primary">
-              Send
+              Send Message
             </button>
           </form>
 
