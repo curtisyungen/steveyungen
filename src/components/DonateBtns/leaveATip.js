@@ -8,6 +8,7 @@ class LeaveATip extends Component {
       pathname: null
     };
   }
+
   componentDidMount = () => {
     this.setState({
       pathname: window.location.pathname
@@ -17,12 +18,16 @@ class LeaveATip extends Component {
   render() {
     const { source } = this.props;
     const { pathname } = this.state;
+
+    let displayClass = `d-${pathname !== "/tipJar" ? "block" : "none"}`;
+    let btnTypeClass =
+      pathname !== "/music" && pathname !== "/contact"
+        ? "btn-outline-light"
+        : "btn-light";
+
     return (
       <a
-        className={`d-${
-          pathname !== "/tipJar" ? "block" : "none"
-        } donateBtn db-${source} 
-        btn btn-outline-light btn-sm`}
+        className={`${displayClass} donateBtn db-${source} btn ${btnTypeClass}`}
         href="/tipJar"
       >
         Show Your Support

@@ -1,5 +1,12 @@
-.donateBtn {
+.color-black {
+  color: black !important;
+}
+
+.color-white {
   color: white !important;
+}
+
+.donateBtn {
   font-size: 14px;
   margin-right: 3px;
   width: auto;
