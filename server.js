@@ -1,8 +1,5 @@
 require("dotenv").config();
 
-import mailer from "./mailer";
-import bodyParser from "body-parser";
-
 const express = require("express");
 const http = require("http").Server(app);
 const app = express();

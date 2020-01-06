@@ -3,12 +3,11 @@ import React, { Component } from "react";
 class Contact extends Component {
   render() {
     return (
-      <form method="POST" action="/sendEmail">
-        <input type="text" name="name" />
-        <input type="email" name="email" />
-        <textarea name="message" rows="3"></textarea>
-        <input type="submit" />
-      </form>
+      <div className="container contact-container">
+        <div className="row row-style justify-content-center text-center">
+          syungen@gmail.com
+        </div>
+      </div>
     );
   }
 }
