@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import AudioPlayer from "../components/AudioPlayer/audioPlayer";
 import SongList from "../components/SongList/songList";
 import { aboutMusic } from "../content/text";
+
 import {
   DEFAULT_SONG,
   hawaiian,
@@ -10,12 +11,6 @@ import {
   collabs
 } from "../content/songs";
 import "./Music.css";
-
-const photoStyle = {
-  height: "50%",
-  maxHeight: "50%",
-  maxWidth: "100%"
-};
 
 class Music extends Component {
   constructor(props) {
