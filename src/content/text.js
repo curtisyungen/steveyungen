@@ -13,3 +13,5 @@ music, from performers such as Spike Jones and Stan Freberg. Mom
 loved old time hymns and church choral music with vocal harmonies.`;
 
 export const aboutGallery = `The pictures and videos in this gallery are from different musical periods in my life.   They’ve all had their fun times!`;
+
+export const tipJarText = `Donations are always appreciated and go toward putting food on the table for my family.`;

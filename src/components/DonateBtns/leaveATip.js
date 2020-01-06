@@ -25,7 +25,7 @@ class LeaveATip extends Component {
         btn btn-outline-light btn-sm`}
         href="/tipJar"
       >
-        Support
+        Show Your Support
       </a>
     );
   }

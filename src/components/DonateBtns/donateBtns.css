@@ -2,7 +2,7 @@
   color: white !important;
   font-size: 14px;
   margin-right: 3px;
-  width: 100px;
+  width: auto;
 }
 
 .donateBtn:hover {
