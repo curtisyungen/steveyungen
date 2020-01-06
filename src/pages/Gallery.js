@@ -133,40 +133,40 @@ class Gallery extends Component {
 
         {/* ROW 1 */}
         <div className="row video-row justify-content-center text-center">
-          <div className="col-md-8 col-xl-4">
+          <div className="col-xs-8 col-md-6">
             <Video video={"https://www.youtube.com/embed/xEYHfnU0Z9o?rel=0"} />
           </div>
-          <div className="col-md-8 col-xl-4">
+          <div className="col-xs-8 col-md-6">
             <Video video={"https://www.youtube.com/embed/tgwyTx6I6sY"} />
           </div>
         </div>
 
         {/* ROW 2 */}
         <div className="row video-row justify-content-center text-center">
-          <div className="col-md-8 col-xl-4">
+          <div className="col-xs-8 col-md-6">
             <Video video={"https://www.youtube.com/embed/P3s9dW91KB4"} />
           </div>
-          <div className="col-md-8 col-xl-4">
+          <div className="col-xs-8 col-md-6">
             <Video video={"https://www.youtube.com/embed/dphpd_m3cj0"} />
           </div>
         </div>
 
         {/* ROW 3 */}
         <div className="row video-row justify-content-center text-center">
-          <div className="col-md-8 col-xl-4">
+          <div className="col-xs-8 col-md-6">
             <Video video={"https://www.youtube.com/embed/P4to7YpbM4k"} />
           </div>
-          <div className="col-md-8 col-xl-4">
+          <div className="col-xs-8 col-md-6">
             <Video video={"https://www.youtube.com/embed/pd9kunqRBQ8"} />
           </div>
         </div>
 
         {/* ROW 4 */}
         <div className="row video-row justify-content-center text-center">
-          <div className="col-md-8 col-xl-4">
+          <div className="col-xs-8 col-md-6">
             <Video video={"https://www.youtube.com/embed/dFu8YgKDRJY"} />
           </div>
-          <div className="col-md-8 col-xl-4">
+          <div className="col-xs-8 col-md-6">
             <Video video={"https://www.youtube.com/embed/vmlbEtXN-DQ"} />
           </div>
         </div>
