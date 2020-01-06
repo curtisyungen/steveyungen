@@ -11,12 +11,16 @@
   height: 250px;
   max-width: 100% !important;
   overflow-x: hidden !important;
+  position: relative;
 }
 
 .navbar-brand {
+  left: 50%;
   margin: auto;
   max-width: 100%;
+  position: absolute;
   text-align: center;
+  transform: translate(-50%);
   white-space: normal;
 }
 
@@ -53,30 +57,53 @@
   word-wrap: break-word;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 991px) {
+  .navbar {
+    height: 350px;
+  }
+
+  .navbar-brand {
+    top: 31px;
+  }
+
+  .welcomeNote {
+    max-width: 100%;
+  }
+
   #navbarNav {
     padding: 0.75rem;
     right: 20px;
     top: 50px;
   }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-brand {
+    top: 50px;
+  }
+
+  .steveyungen {
+    font-size: 38px;
+  }
 
   .welcomeNote {
-    max-width: 65%;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .welcomeNote {
+    display: none;
   }
 }
 
 @media only screen and (max-width: 520px) {
   .navbar-brand {
     font-size: 16px;
-    margin: auto;
-    margin-top: -10px;
+    top: 10px;
   }
 
   .steveyungen {
     font-size: 16px;
-  }
-
-  .welcomeNote {
-    display: none;
   }
 }

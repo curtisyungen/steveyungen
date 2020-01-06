@@ -1,15 +1,5 @@
 import React, { Component } from "react";
-import Photo from "../components/Photo/photo";
-import SteveSOSACutOut from "../images/steve/steve-sosa-cutout.png";
 import "./Contact.css";
-
-const photoStyle = {
-  bottom: "0",
-  left: "0",
-  maxHeight: "75%",
-  position: "absolute",
-  zIndex: "-1"
-};
 
 class Contact extends Component {
   constructor(props) {
@@ -37,10 +27,6 @@ class Contact extends Component {
             <p className="title large-title">CONTACT STEVE</p>
             <div className="spacer"></div>
           </div>
-
-          {/* <div className="justify-content-center text-center">
-          <a href="mailto:syungen@yahoo.com">syungen@yahoo.com</a>
-        </div> */}
 
           <form
             className="contactForm"
@@ -80,10 +66,6 @@ class Contact extends Component {
               Send Message
             </button>
           </form>
-
-          <div className="steve-sosa-cutout">
-            <Photo image={SteveSOSACutOut} style={photoStyle} />
-          </div>
         </div>
       </div>
     );

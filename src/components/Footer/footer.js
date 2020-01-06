@@ -21,7 +21,7 @@ class Footer extends Component {
     return (
       <div
         className={`page-footer text-center footer ${
-          pathname !== "/contact" ? "mt-3" : "mt-0"
+          pathname !== "/events" ? "mt-3" : "mt-0"
         }`}
       >
         <div className="footer-inner">

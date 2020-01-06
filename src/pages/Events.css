@@ -1,0 +1,14 @@
+.events-container {
+  margin: auto 0px !important;
+  max-width: 100%;
+  min-height: 75vh;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+  .events-container img {
+    display: none;
+  }
+}
