@@ -90,6 +90,7 @@ class Gallery extends Component {
         <div className="row justify-content-center text-center ">
           {Object.keys(galleryImages).map(image => (
             <div
+              key={image}
               className="col-sm-8 col-md-4 col-xl-2"
               onClick={this.openModal.bind(this, image)}
             >

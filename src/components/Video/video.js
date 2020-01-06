@@ -7,9 +7,9 @@ class Video extends Component {
     return (
       <iframe
         title="youtubePlayer"
-        allowfullscreen
+        allowFullScreen
         className="video fadeIn-3"
-        frameborder="0"
+        frameBorder="0"
         src={video}
       />
     );
