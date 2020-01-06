@@ -6,19 +6,15 @@ import LeiAloha from "../images/steve/the-lei-aloha-serenaders.jpg";
 import TurksSteve from "../images/steve/steve-turks.jpg";
 import GrandSteve from "../images/steve/steve-grand-canyon-guitar.jpg";
 import LapSteve from "../images/steve/lap-steve.jpg";
-import AlohaSteve from "../images/steve/aloha-friday-steve.jpg";
 import Steve1986 from "../images/steve/steve-1986.jpg";
 import SteveGreg from "../images/steve/steve-greg.jpg";
 import StevePili from "../images/steve/steve-pili.jpg";
 import SteveSOSAChild from "../images/steve/steve-sosa-child.jpg";
 import SteveCurtis from "../images/steve/steve-and-curtis.jpg";
-// import BassFace from "../images/steve/steve-bass-face.jpg";
-// import GenericBand4 from "../images/steve/steve-generic-band-4.jpg";
 import SteveGuitars from "../images/steve/steve-guitars.jpg";
 import SteveTaylors2 from "../images/steve/steve-taylor-2.jpg";
 import Route66 from "../images/steve/steve-route-66.jpg";
-import SteveSOSA from "../images/steve/steve-sosa.jpg";
-// import Ukulele from "../images/steve/steve-ukulele.jpg";
+import SteveUkulele from "../images/steve/steve-ukulele.jpg";
 import Windmill from "../images/steve/steve-windmill.jpg";
 
 export const galleryImages = {
@@ -64,10 +60,10 @@ export const galleryImages = {
     description: "March 2017"
   },
 
-  steveTaylors2: {
-    image: SteveTaylors2,
-    title: "Steve's Taylors",
-    description: ""
+  steveUkulele: {
+    image: SteveUkulele,
+    title: "Steve Warming Up Pre-Show",
+    description: "2018"
   },
 
   steveGreg: {
@@ -106,17 +102,6 @@ export const galleryImages = {
     description: "Jacksonville Farmer's Market, 2019"
   },
 
-  // bassFace: {
-  //   image: BassFace,
-  //   title: "Bass face",
-  //   description: ""
-  // },
-
-  // genericBand4: {
-  //   image: GenericBand4,
-  //   title: "The Generic Band",
-  //   description: "1986"
-  // },
   lapSteve: {
     image: LapSteve,
     title: "Steve with Lap Steel",
@@ -129,17 +114,11 @@ export const galleryImages = {
     description: "1986"
   },
 
-  steveSOSA: {
-    image: SteveSOSA,
-    title: "Jacksonville Farmer's Market",
-    description: "Southern Oregon Songwriters, 2019"
+  steveTaylors2: {
+    image: SteveTaylors2,
+    title: "Steve's Taylors",
+    description: ""
   },
-
-  // ukulele: {
-  //   image: Ukulele,
-  //   title: "Steve with Ukulele",
-  //   description: ""
-  // },
 
   windmill: {
     image: Windmill,
