@@ -53,6 +53,18 @@
   word-wrap: break-word;
 }
 
+@media only screen and (max-width: 768px) {
+  #navbarNav {
+    padding: 0.75rem;
+    right: 20px;
+    top: 50px;
+  }
+
+  .welcomeNote {
+    max-width: 65%;
+  }
+}
+
 @media only screen and (max-width: 520px) {
   .navbar-brand {
     font-size: 16px;
@@ -66,13 +78,5 @@
 
   .welcomeNote {
     display: none;
-  }
-}
-
-@media only screen and (max-width: 420px) {
-  #navbarNav {
-    padding: 0.75rem;
-    right: 20px;
-    top: 50px;
   }
 }
