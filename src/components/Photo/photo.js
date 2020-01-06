@@ -12,7 +12,7 @@ class Photo extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      openModal: null,
+      openModal: false,
       modalImage: null,
       title: null,
       description: null
@@ -22,7 +22,6 @@ class Photo extends Component {
   componentDidMount = () => {
     const { title, description, image } = this.props;
     this.setState({
-      openModal: false,
       modalImage: image,
       title,
       description

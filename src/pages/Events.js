@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import Photo from "../components/Photo/photo";
 import alohaFriday from "../images/events/Aloha-Friday-SJY-11-17-2017.jpg";
 import sosaPoster from "../images/events/sosa-poster.jpg";
-import SteveSOSACutOut from "../images/steve/steve-sosa-cutout.png";
+import SteveSOSACutOut from "../images/steve/steve-sosa-cutout-remove-logo.png";
 import "./Events.css";
 
-const eventPhotos = [alohaFriday, sosaPoster, alohaFriday, sosaPoster];
+const eventPhotos = [alohaFriday, sosaPoster];
 
 const photoStyle = {
   maxHeight: "300px",
@@ -30,7 +30,7 @@ class Events extends Component {
 
         <div className="row justify-content-center text-center mt-4">
           {eventPhotos.map(event => (
-            <div className="col-xs-12 col-md-2">
+            <div key={event} className="col-xs-12 col-md-2">
               <Photo image={event} style={photoStyle} hasModal />
             </div>
           ))}
