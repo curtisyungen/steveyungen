@@ -43,7 +43,7 @@ class SongList extends Component {
     return (
       <div className="col-md-3 songList text-center">
         {this.getSVG()}
-        <h4 className="title">{listTitle.toUpperCase()}</h4>
+        <h4 className="title pb-2 pt-2">{listTitle.toUpperCase()}</h4>
         {Object.keys(list).map(song => (
           <div
             key={song}
