@@ -41,7 +41,7 @@ class SongList extends Component {
   render() {
     const { listTitle, list, selectedTitle } = this.props;
     return (
-      <div className="col-md-3 songList text-center">
+      <div className="col-xs-12 col-md-3 songList text-center">
         {this.getSVG()}
         <h4 className="title pb-2 pt-2">{listTitle.toUpperCase()}</h4>
         {Object.keys(list).map(song => (

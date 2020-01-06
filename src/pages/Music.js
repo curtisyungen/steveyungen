@@ -36,10 +36,10 @@ class Music extends Component {
           <div className="spacer"></div>
         </div>
 
-        <div className="row">
+        <div className="row row-style justify-content-center text-center ">
           <AudioPlayer title={title} />
         </div>
-        <div className="row">
+        <div className="row row-style justify-content-center text-center ">
           <SongList
             listTitle={"Hawaiian"}
             list={hawaiian}

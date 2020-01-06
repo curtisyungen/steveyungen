@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Photo from "../components/Photo/photo";
 import alohaFriday from "../images/events/Aloha-Friday-SJY-11-17-2017.jpg";
-import SosaPoster from "../images/events/sosa-poster.jpg";
+import sosaPoster from "../images/events/sosa-poster.jpg";
 
 const photoStyle = {
   maxHeight: "400px",
@@ -14,6 +14,7 @@ class Events extends Component {
       <div className="container events-container">
         <div className="row row-style justify-content-center text-center">
           <Photo image={alohaFriday} style={photoStyle} />
+          <Photo image={sosaPoster} style={photoStyle} />
         </div>
       </div>
     );
