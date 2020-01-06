@@ -14,6 +14,11 @@ class Contact extends Component {
   render() {
     return (
       <div className="container contact-container">
+        <div className="row row-style justify-content-center text-center aboutMusic">
+          <p className="title large-title">CONTACT STEVE</p>
+          <div className="spacer"></div>
+        </div>
+
         <div className="row row-style justify-content-center text-center">
           <a href="mailto:syungen@yahoo.com">syungen@yahoo.com</a>
         </div>
