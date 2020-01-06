@@ -50,8 +50,8 @@
 
 .jumbotron-tipJar {
   background: black;
-  background-image: url("../../images/covers/some-mountain-2.jpg");
-  background-position: center;
+  background-image: url("../../images/hawaii/hawaii-green.jpg");
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
