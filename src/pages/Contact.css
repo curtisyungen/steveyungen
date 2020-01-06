@@ -1,0 +1,12 @@
+.contact {
+  height: 100vh;
+  position: relative;
+}
+
+.contact-container {
+  margin: auto 0px !important;
+  max-width: 100%;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  text-align: center;
+}

@@ -11,6 +11,12 @@ import {
 } from "../content/songs";
 import "./Music.css";
 
+const photoStyle = {
+  height: "50%",
+  maxHeight: "50%",
+  maxWidth: "100%"
+};
+
 class Music extends Component {
   constructor(props) {
     super(props);
@@ -34,6 +40,7 @@ class Music extends Component {
           <p className="description">{aboutMusic}</p>
           <div className="spacer"></div>
         </div>
+
         <div className="row">
           <AudioPlayer title={title} />
         </div>
