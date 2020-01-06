@@ -15,3 +15,35 @@
   padding-top: 1rem !important;
   position: relative;
 }
+
+/* .jumbotron-contact {
+  background: white;
+  background-image: url("../../images/hawaii/palms-bw.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+} */
+
+.jumbotron-music {
+  background: white;
+  background-image: url("../../images/hawaii/honolulu-cropped.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* .jumbotron-music {
+  background: black;
+  background-image: url("../../images/hawaii/sunset.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 30%;
+} */
+
+.jumbotron-tipJar {
+  background: black;
+  background-image: url("../../images/hawaii/sunset.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 30%;
+}

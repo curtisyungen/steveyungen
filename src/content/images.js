@@ -15,6 +15,7 @@ import SteveCurtis from "../images/steve/steve-and-curtis.jpg";
 // import BassFace from "../images/steve/steve-bass-face.jpg";
 // import GenericBand4 from "../images/steve/steve-generic-band-4.jpg";
 import SteveGuitars from "../images/steve/steve-guitars.jpg";
+import SteveTaylors2 from "../images/steve/steve-taylor-2.jpg";
 import Route66 from "../images/steve/steve-route-66.jpg";
 import SteveSOSA from "../images/steve/steve-sosa.jpg";
 // import Ukulele from "../images/steve/steve-ukulele.jpg";
@@ -63,10 +64,10 @@ export const galleryImages = {
     description: "March 2017"
   },
 
-  alohaSteve: {
-    image: AlohaSteve,
-    title: "Aloha Friday",
-    description: "Eugene, OR, November 2016"
+  steveTaylors2: {
+    image: SteveTaylors2,
+    title: "Steve's Taylors",
+    description: ""
   },
 
   steveGreg: {
@@ -83,7 +84,7 @@ export const galleryImages = {
 
   steveGuitars: {
     image: SteveGuitars,
-    title: "Guitar Display",
+    title: "Steve's Taylors",
     description: ""
   },
 
