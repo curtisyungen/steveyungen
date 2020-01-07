@@ -11,6 +11,10 @@ import ErrorPage from "./pages/ErrorPage";
 import Footer from "./components/Footer/footer";
 
 class App extends Component {
+  getAdminKey = () => {
+    return prompt("Admin key: ") === "111";
+  };
+
   render() {
     return (
       <Router>

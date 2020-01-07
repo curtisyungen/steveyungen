@@ -31,6 +31,11 @@ const clevelandStyle = {
 };
 
 class Home extends Component {
+  componentDidMount = () => {
+    let admin = window.location.pathname.split("/")[2];
+    console.log(admin);
+  };
+
   render() {
     return (
       <div className="container home-container">
