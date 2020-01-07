@@ -10,7 +10,12 @@
   margin-bottom: -16px;
 }
 
-@media only screen and (max-width: 768px) {
+.steve-sosa-cutout img {
+  max-height: 100%;
+  max-width: 35%;
+}
+
+@media only screen and (max-width: 600px) {
   .steve-sosa-cutout {
     display: none;
   }

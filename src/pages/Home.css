@@ -48,7 +48,8 @@ body {
 
 .gallery-container,
 .home-container,
-.music-container {
+.music-container,
+.events-container {
   font-family: "Cabin", "sans-serif";
   padding: 40px 60px !important;
 

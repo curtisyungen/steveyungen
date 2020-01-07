@@ -30,7 +30,7 @@ class Music extends Component {
     const { title } = this.state;
     return (
       <div className="container music-container">
-        <div className="row row-style justify-content-center text-center aboutMusic">
+        <div className="row row-style justify-content-center text-center">
           <p className="title large-title">MUSIC</p>
           <p className="description">{aboutMusic}</p>
           <div className="spacer"></div>
