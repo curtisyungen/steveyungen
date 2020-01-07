@@ -19,16 +19,14 @@ export const hawaiian = {
 export const composed = {
   "At The Beach": "at-the-beach",
   "At The Beach v. 2": "at-the-beach-1",
-  "A Change of Heart v. 1": "02-a-change-of-heart",
-  "A Change of Heart (Aug. 2017)": "a-change-of-heart-aug-2017",
+  "A Change of Heart": "a-change-of-heart-aug-2017",
   "Another Sunny Day": "03-another-sunny-day",
   Domino: "domino-170",
   "Flying Harmonicas": "flying-harmonicas-1",
   "Got to Move Forward": "05-got-to-move-forward",
   "In This Light You Look Like a Friend of Mine":
     "in-this-light-you-look-like-a-friend-of-mine",
-  "Old Folks Tell Their Stories v. 1": "08-old-folks-tell-their-stories",
-  "Old Folks Tell Their Stories v. 2": "the-old-folks-tell-their-stories",
+  "Old Folks Tell Their Stories": "the-old-folks-tell-their-stories",
   "Picnic v. 1": "01-picnic",
   "Sprayed By Skunk v. 3": "sprayed-by-skunk-3",
   "Sprayed By Skunk (Lap Steel)":
@@ -44,7 +42,6 @@ export const covers = {
     "between-the-devil-and-the-deep-blue-sea",
   "City of Stars": "city-of-stars-steve",
   "I Fall to Pieces": "i-fall-to-pieces",
-  "Love Hurts": "love-hurts",
   "Moonlight Lady": "moonlight-lady-final-5-30-16",
   "Red Sails In the Sunset": "red-sails-in-the-sunset",
   "Slow Down": "slow-down",
@@ -58,7 +55,5 @@ export const covers = {
 };
 
 export const collabs = {
-  "Big City": "big-city-greg-and-steve",
-  "If I Fell": "if-i-fell-greg-and-steve-10-2-16",
-  "This Guy's in Love": "this-guys-in-love-steve-and-greg"
+  "If I Fell": "if-i-fell-greg-and-steve-10-2-16"
 };
