@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Photo from "../components/Photo/photo";
 import Video from "../components/Video/video";
-import { aboutGallery } from "../content/text";
 import { galleryImages } from "../content/images";
 
 const photoStyle = {
