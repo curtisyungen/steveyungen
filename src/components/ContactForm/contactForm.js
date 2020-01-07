@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Redirect } from "react-router-dom";
 import "./contactForm.css";
 
 class ContactForm extends Component {
@@ -9,27 +8,9 @@ class ContactForm extends Component {
     this.state = {
       userName: "",
       email: "",
-      message: "",
-      goHome: false,
-      load: 0
+      message: ""
     };
   }
-
-  componentDidMount = () => {
-    this.getFormLoad();
-  };
-
-  getFormLoad = () => {
-    let { load } = this.state;
-    document.getElementById("mG61Hd").onload = function() {
-      load += 1;
-      if (load > 1) {
-        this.setState({
-          goHome: true
-        });
-      }
-    };
-  };
 
   handleInputChange = event => {
     const { name, value } = event.target;
@@ -54,14 +35,8 @@ class ContactForm extends Component {
     });
   };
 
-  redirectToHome = () => {
-    this.setState({
-      goHome: true
-    });
-  };
-
   render() {
-    const { name, email, message, goHome } = this.state;
+    const { name, email, message } = this.state;
     return (
       <div className="contactForm">
         <form
