@@ -18,7 +18,7 @@
 
 .jumbotron-contact {
   background: white;
-  background-image: url("https://res.cloudinary.com/curtiscdn/image/upload/v1578358423/crater-lake-pano_hjrnf8.jpg");
+  background-image: url("https://res.cloudinary.com/curtiscdn/image/fetch/http://u.cubeupload.com/curtisyungen/craterlakepano.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -26,7 +26,7 @@
 
 .jumbotron-events {
   background: white;
-  background-image: url("https://res.cloudinary.com/curtiscdn/image/upload/v1578361103/jacksonville-pano-min_ze2f3f.jpg");
+  background-image: url("https://res.cloudinary.com/curtiscdn/image/fetch/http://u.cubeupload.com/curtisyungen/jacksonvillepanomin.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -34,7 +34,7 @@
 
 .jumbotron-music {
   background: white;
-  background-image: url("https://res.cloudinary.com/curtiscdn/image/upload/v1578358425/ocean-1_tpwauj.jpg");
+  background-image: url("https://res.cloudinary.com/curtiscdn/image/fetch/http://u.cubeupload.com/curtisyungen/ocean1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -42,7 +42,7 @@
 
 .jumbotron-gallery {
   background: white;
-  background-image: url("https://res.cloudinary.com/curtiscdn/image/upload/v1578358422/old-stage-pano_grkjyh.jpg");
+  background-image: url("https://res.cloudinary.com/curtiscdn/image/fetch/http://u.cubeupload.com/curtisyungen/oldstagepano.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -50,7 +50,7 @@
 
 .jumbotron-support {
   background: black;
-  background-image: url("https://res.cloudinary.com/curtiscdn/image/upload/v1578359834/hawaii-green-min_r18rjd.jpg");
+  background-image: url("https://res.cloudinary.com/curtiscdn/image/fetch/http://u.cubeupload.com/curtisyungen/hawaiigreenmin.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
