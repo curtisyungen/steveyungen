@@ -70,7 +70,7 @@ class Photo extends Component {
   };
 
   render() {
-    const { image, hasModal, link, target } = this.props;
+    const { image, hasModal, link, target, caption } = this.props;
     const { openModal, modalImage, title, description } = this.state;
 
     return (
@@ -82,6 +82,7 @@ class Photo extends Component {
             alt="alt title"
             onClick={this.openModal}
           />
+          <p className="caption">{caption}</p>
           {!hasModal ? (
             <>
               <p className="title">{title}</p>

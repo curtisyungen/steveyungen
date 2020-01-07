@@ -133,7 +133,11 @@ class Home extends Component {
         <div className="row row-style justify-content-center text-center">
           <div className="col-sm-12 spacer" />
           <div className="col-md-12">
-            <Photo image={steveCleveland} style={clevelandStyle} />
+            <Photo
+              image={steveCleveland}
+              style={clevelandStyle}
+              caption="Cleveland 2016"
+            />
           </div>
           <div className="col-sm-12 spacer-small" />
         </div>
