@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Redirect } from "react-router-dom";
 import "./contactForm.css";
 
 class ContactForm extends Component {
@@ -8,7 +9,8 @@ class ContactForm extends Component {
     this.state = {
       userName: "",
       email: "",
-      message: ""
+      message: "",
+      goHome: false
     };
   }
 
@@ -35,8 +37,16 @@ class ContactForm extends Component {
     });
   };
 
+  redirectToHome = () => {
+    setTimeout(() => {
+      this.setState({
+        goHome: true
+      });
+    }, 1000);
+  };
+
   render() {
-    const { name, email, message } = this.state;
+    const { name, email, message, goHome } = this.state;
     return (
       <div className="contactForm">
         <form
@@ -59,8 +69,9 @@ class ContactForm extends Component {
             <label>Email *</label>
             <input
               className="contactInput"
+              required
               name="entry.1805927419"
-              type="text"
+              type="email"
               defaultValue={email}
               onChange={this.handleInputChange}
             />
@@ -72,6 +83,7 @@ class ContactForm extends Component {
               name="entry.1620027203"
               rows="3"
               defaultValue={message}
+              required
               onChange={this.handleInputChange}
             ></textarea>
           </div>
@@ -80,6 +92,7 @@ class ContactForm extends Component {
               className="btn btn-outline-dark contactSubmitBtn"
               type="submit"
               value="Submit"
+              onClick={this.redirectToHome}
             />
           </div>
         </form>
