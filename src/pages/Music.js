@@ -120,9 +120,9 @@ class Music extends Component {
         >
           <div className="autoPlaySwitch">
             <p className="autoPlayLabel">AUTOPLAY</p>
-            <label class="switch">
+            <label className="switch">
               <input type="checkbox" onChange={this.toggleAutoPlay} />
-              <span class="slider round" />
+              <span className="slider round" />
             </label>
           </div>
           <AudioPlayer title={title} autoPlay={autoPlay} />
