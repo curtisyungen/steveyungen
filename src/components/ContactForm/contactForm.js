@@ -1,8 +1,10 @@
 import React, { Component } from "react";
+import "./contactForm.css";
 
 class ContactForm extends Component {
   constructor(props) {
     super(props);
+
     this.state = {
       userName: "",
       email: "",
@@ -36,36 +38,53 @@ class ContactForm extends Component {
   render() {
     const { name, email, message } = this.state;
     return (
-      <form
-        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfTaiBeX6hte9tcpIHydbxaKqKPOgGVa8HSX9BYmUYrOLLtWg/formResponse"
-        target="_self"
-        method="POST"
-        id="mG61Hd"
-      >
-        <p>Your Name</p>
-        <input
-          name="entry.1919979108"
-          type="text"
-          defaultValue={name}
-          onChange={this.handleInputChange}
-        />
-        <p>Your Email</p>
-        <input
-          name="entry.1805927419"
-          type="text"
-          defaultValue={email}
-          onChange={this.handleInputChange}
-        />
-        <p>Your Mesage</p>
-        <textarea
-          name="entry.1620027203"
-          rows="1"
-          defaultValue={message}
-          onChange={this.handleInputChange}
-        ></textarea>
-        <br />
-        <input class="button" type="submit" value="Submit" />
-      </form>
+      <div className="contactForm">
+        <form
+          action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfTaiBeX6hte9tcpIHydbxaKqKPOgGVa8HSX9BYmUYrOLLtWg/formResponse"
+          target="_self"
+          method="POST"
+          id="mG61Hd"
+        >
+          <div className="form-field">
+            <label>Name</label>
+            <input
+              className="contactInput"
+              name="entry.1919979108"
+              type="text"
+              defaultValue={name}
+              onChange={this.handleInputChange}
+            />
+          </div>
+          <div className="form-field">
+            <label>Email *</label>
+            <input
+              className="contactInput"
+              name="entry.1805927419"
+              type="text"
+              defaultValue={email}
+              onChange={this.handleInputChange}
+            />
+          </div>
+          <div className="form-field">
+            <label>Message *</label>
+            <textarea
+              className="contactInput"
+              name="entry.1620027203"
+              rows="3"
+              defaultValue={message}
+              onChange={this.handleInputChange}
+            ></textarea>
+          </div>
+          <div className="form-field">
+            <input
+              className="btn btn-outline-dark contactSubmitBtn"
+              type="submit"
+              value="Submit"
+            />
+          </div>
+        </form>
+        <div className="spacer" />
+      </div>
     );
   }
 }

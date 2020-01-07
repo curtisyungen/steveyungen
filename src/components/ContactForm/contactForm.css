@@ -1,0 +1,22 @@
+.contactForm {
+  text-align: left;
+}
+
+.contactInput {
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 20px;
+  padding: 3px 10px;
+  width: 100%;
+}
+
+.contactSubmitBtn {
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%);
+  width: 100px;
+}
+
+.form-field {
+  margin: 15px 0px;
+}
