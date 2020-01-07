@@ -98,6 +98,7 @@ class ContactForm extends Component {
               className="contactInput"
               name="entry.1620027203"
               rows="3"
+              maxLength="1000"
               defaultValue={message}
               required
               onChange={this.handleInputChange}
