@@ -15,10 +15,7 @@ class TipJar extends Component {
       <div className="container tipJar-container fadeIn-fast">
         <div className="row row-style justify-content-center text-center">
           <p className="title large-title">SUPPORT</p>
-          <p className="description">
-            Donations are always appreciated and go toward putting food on the
-            table for my family.
-          </p>
+          <p className="description">Donations are always appreciated!</p>
           <div className="spacer"></div>
         </div>
         <div className="col-xs-12 text-center">

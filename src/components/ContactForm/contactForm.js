@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import "./contactForm.css";
 
+const NAME_FIELD = "entry.1110833389";
+const EMAIL_FIELD = "entry.4075683";
+const MESSAGE_FIELD = "entry.1253447738";
+
 class ContactForm extends Component {
   constructor(props) {
     super(props);
@@ -16,15 +20,15 @@ class ContactForm extends Component {
     const { name, value } = event.target;
     let { userName, email, message } = this.state;
 
-    if (name === "entry.1919979108") {
+    if (name === NAME_FIELD) {
       userName = value;
     }
 
-    if (name === "entry.1805927419") {
+    if (name === EMAIL_FIELD) {
       email = value;
     }
 
-    if (name === "entry.1620027203") {
+    if (name === MESSAGE_FIELD) {
       message = value;
     }
 
@@ -40,7 +44,7 @@ class ContactForm extends Component {
     return (
       <div className="contactForm">
         <form
-          action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfTaiBeX6hte9tcpIHydbxaKqKPOgGVa8HSX9BYmUYrOLLtWg/formResponse"
+          action="https://docs.google.com/forms/u/5/d/e/1FAIpQLSfSUawAYCaQqN34TrmCYkCdSfW1aJKkZq4HyFWhh8i-W9D-UQ/formResponse"
           target="_self"
           method="POST"
           id="mG61Hd"
@@ -49,7 +53,7 @@ class ContactForm extends Component {
             <label>Name *</label>
             <input
               className="contactInput"
-              name="entry.1919979108"
+              name={NAME_FIELD}
               type="text"
               defaultValue={name}
               required
@@ -61,7 +65,7 @@ class ContactForm extends Component {
             <input
               className="contactInput"
               required
-              name="entry.1805927419"
+              name={EMAIL_FIELD}
               type="email"
               defaultValue={email}
               onChange={this.handleInputChange}
@@ -71,7 +75,7 @@ class ContactForm extends Component {
             <label>Message *</label>
             <textarea
               className="contactInput"
-              name="entry.1620027203"
+              name={MESSAGE_FIELD}
               rows="3"
               maxLength="1000"
               defaultValue={message}

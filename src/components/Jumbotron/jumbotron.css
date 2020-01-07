@@ -1,7 +1,7 @@
 .jumbotron {
   background: black;
   background-attachment: scroll;
-  /* background-image: url("https://res.cloudinary.com/curtiscdn/image/fetch/http://u.cubeupload.com/curtisyungen/stevecoversmall.png"); */
+  background-image: url("https://res.cloudinary.com/curtiscdn/image/fetch/http://u.cubeupload.com/curtisyungen/stevecoversmall.png");
   background-position: left center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -16,7 +16,7 @@
   position: relative;
 }
 
-/* .jumbotron-contact {
+.jumbotron-contact {
   background-image: url("https://res.cloudinary.com/curtiscdn/image/fetch/http://u.cubeupload.com/curtisyungen/craterlakepano.jpg");
   background-position: center top;
   background-repeat: no-repeat;
@@ -49,4 +49,4 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-} */
+}
