@@ -8,10 +8,12 @@ class Footer extends Component {
     return (
       <div className={`page-footer text-center footer`}>
         <div className="footer-inner">
-          <h5>Footer</h5>
+          <SocialIcons />
+          <ScrollTop />
+          <div className="copyright">
+            Copyright &copy; 2020 Steve Yungen. All rights reserved.
+          </div>
         </div>
-        <SocialIcons />
-        <ScrollTop />
       </div>
     );
   }

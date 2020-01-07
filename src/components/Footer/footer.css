@@ -1,3 +1,12 @@
+.copyright {
+  bottom: 25px;
+  color: rgb(200, 200, 200);
+  font-size: 14px;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%);
+}
+
 .footer {
   background: rgb(17, 17, 17);
   color: white;
@@ -5,6 +14,7 @@
   max-width: 100% !important;
   overflow-x: hidden !important;
   position: relative;
+  text-align: center;
 }
 
 .footer-inner {
