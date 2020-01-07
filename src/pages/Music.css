@@ -16,6 +16,11 @@
   width: 100%;
 }
 
+.donatePrompt {
+  margin-bottom: 50px;
+  margin-top: -15px;
+}
+
 .selected-false {
   color: black;
 }

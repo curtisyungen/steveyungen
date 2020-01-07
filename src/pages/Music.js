@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import AudioPlayer from "../components/AudioPlayer/audioPlayer";
 import SongList from "../components/SongList/songList";
+import DonateBtns from "../components/DonateBtns/donateBtns";
+import Logo from "../components/Logo/logo";
+import Thumb from "../images/logos/thumb.svg";
 
 import {
   DEFAULT_SONG,
@@ -11,12 +14,21 @@ import {
 } from "../content/songs";
 import "./Music.css";
 
+const thumbStyle = {
+  cursor: "pointer",
+  marginBottom: "-8px",
+  marginLeft: "5px",
+  maxHeight: "30px",
+  maxWidth: "100%"
+};
+
 class Music extends Component {
   constructor(props) {
     super(props);
     this.state = {
       title: DEFAULT_SONG,
-      autoPlay: false
+      autoPlay: false,
+      askForTip: false
     };
   }
 
@@ -32,8 +44,14 @@ class Music extends Component {
     });
   };
 
+  toggleTip = () => {
+    this.setState({
+      askForTip: true
+    });
+  };
+
   render() {
-    const { title, autoPlay } = this.state;
+    const { title, autoPlay, askForTip } = this.state;
     return (
       <div className="container music-container">
         <div className="row row-style justify-content-center text-center">
@@ -59,9 +77,22 @@ class Music extends Component {
           <AudioPlayer title={title} autoPlay={autoPlay} />
         </div>
 
-        <div className="row justify-content-center text-center">
-          Like this song? Donate bitch!
+        <div className="text-center">
+          <p className="donatePrompt">
+            {!askForTip ? (
+              <div onClick={this.toggleTip}>
+                <Logo image={Thumb} style={thumbStyle} />
+                Like this song?
+              </div>
+            ) : (
+              <div className="fadeIn-3">
+                <p>Leave a tip!</p>
+                <DonateBtns />
+              </div>
+            )}
+          </p>
         </div>
+
         <div className="row row-style justify-content-center text-center ">
           <SongList
             listTitle={"Hawaiian"}
