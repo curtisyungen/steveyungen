@@ -1,7 +1,7 @@
 .jumbotron {
   background: black;
   background-attachment: scroll;
-  background-image: url("https://steveyungen.com/wp-content/uploads/2018/02/31065308171_2a444afc1a_o.jpg");
+  background-image: url("https://res.cloudinary.com/curtiscdn/image/upload/v1578358766/steve-cover-small_hvjrpw.png");
   background-position: left center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -18,7 +18,7 @@
 
 .jumbotron-contact {
   background: white;
-  background-image: url("../../images/covers/crater-lake-pano.jpg");
+  background-image: url("https://res.cloudinary.com/curtiscdn/image/upload/v1578358423/crater-lake-pano_hjrnf8.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -34,7 +34,7 @@
 
 .jumbotron-music {
   background: white;
-  background-image: url("../../images/covers/ocean-1.jpg");
+  background-image: url("https://res.cloudinary.com/curtiscdn/image/upload/v1578358425/ocean-1_tpwauj.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -42,7 +42,7 @@
 
 .jumbotron-gallery {
   background: white;
-  background-image: url("../../images/covers/old-stage-pano.jpg");
+  background-image: url("https://res.cloudinary.com/curtiscdn/image/upload/v1578358422/old-stage-pano_grkjyh.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -50,7 +50,7 @@
 
 .jumbotron-support {
   background: black;
-  background-image: url("../../images/covers/hawaii-green-min.jpg");
+  background-image: url("https://res.cloudinary.com/curtiscdn/image/upload/v1578358441/hawaii-green_hp4dmo.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
