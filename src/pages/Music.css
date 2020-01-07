@@ -127,8 +127,12 @@ input:checked + .slider:before {
   -ms-transform: translateX(26px);
 }
 
-.mobilize {
-  background: green;
+.mobilize-false {
+  transition: 0.5s;
+}
+
+.mobilize-true {
+  background: #e2e2e2;
   border-bottom: 1px solid #303030;
   left: 0px;
   margin: 0px;
@@ -137,6 +141,7 @@ input:checked + .slider:before {
   padding-bottom: 0px;
   position: fixed;
   top: 0px;
+  transition: 0.5s;
   width: 100%;
   z-index: 99;
 }

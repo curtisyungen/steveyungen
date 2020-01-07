@@ -116,9 +116,7 @@ class Music extends Component {
 
         <div
           id="audio-section"
-          className={`row row-style justify-content-center text-center audio-section ${
-            mobilize === true ? "mobilize" : ""
-          }`}
+          className={`row row-style justify-content-center text-center audio-section mobilize-${mobilize}`}
         >
           <div className="autoPlaySwitch">
             <p className="autoPlayLabel">AUTOPLAY</p>
