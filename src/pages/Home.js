@@ -7,7 +7,6 @@ import GalleryImage from "../images/steve/steve-1979.jpg";
 import SoundCloudLogo from "../images/logos/soundcloud.svg";
 import YouTubeLogo from "../images/logos/youtube.svg";
 import FacebookLogo from "../images/logos/facebook.svg";
-import { aboutSteve } from "../content/text";
 import "./Home.css";
 
 const photoStyle = {
@@ -29,9 +28,30 @@ class Home extends Component {
     return (
       <div className="container home-container">
         {/* ABOUT */}
-        <div className="row row-style justify-content-center text-center">
+        <div className="row text-center">
           <p className="title">ABOUT STEVE</p>
-          <p className="description">{aboutSteve}</p>
+          <p className="description text-left">
+            My name is Steve Yungen and I live in Central Point, Oregon. I like
+            to write songs, sing and play guitar, bass and lapsteel. My favorite
+            types of music are Hawaiian Slack Key guitar, Rock’n’Roll, and I
+            also enjoy gospel and choral music.
+          </p>
+          <p className="description text-left">
+            I’ve played music for many years and started my first band in high
+            school called “Zero and the Slicks”, which focused on doo-wop and
+            car-tragedy love songs. I later played with the Generic Band, which
+            entered and won the state True Value Showdown in 1986. I began
+            playing Hawaiian Slack Key guitar styles, which led to playing bass
+            guitar in the Lei Aloha Serenaders, a hula dance band that played
+            for hula dancers in Halau Hula Na Pua O Hawaii Nei. Most recently,
+            I’ve become interested and involved in songwriting and recording,
+            and I am active in the Southern Oregon Songwriters Association.
+          </p>
+          <p className="description text-left">
+            I’m a good sideman and can play several instruments and many styles.
+            I play well with others, and am also available for solo
+            performances.
+          </p>
         </div>
 
         {/* CATEGORIES */}

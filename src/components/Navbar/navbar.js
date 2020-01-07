@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Jumbotron from "../Jumbotron/jumbotron";
-import { welcome } from "../../content/text";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
@@ -15,7 +14,10 @@ class Navbar extends Component {
         <nav className="navbar navbar-expand-lg text-right">
           <a className="navbar-brand" href="/home">
             <p className="steveyungen">STEVE YUNGEN</p>
-            <p className="welcomeNote">{welcome}</p>
+            <p className="welcomeNote">
+              Welcome to my website. My purpose is to share music and life in
+              Southern Oregon.
+            </p>
           </a>
           <button
             className="navbar-toggler"

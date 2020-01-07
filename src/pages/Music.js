@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import AudioPlayer from "../components/AudioPlayer/audioPlayer";
 import SongList from "../components/SongList/songList";
-import { aboutMusic } from "../content/text";
 
 import {
   DEFAULT_SONG,
@@ -32,7 +31,13 @@ class Music extends Component {
       <div className="container music-container">
         <div className="row row-style justify-content-center text-center">
           <p className="title large-title">MUSIC</p>
-          <p className="description">{aboutMusic}</p>
+          <p className="description text-left">
+            Music has been in my life thanks to my mother and father. There was
+            always music in my home, either with singing or just music on
+            records or the radio. Dad liked big band music and quirky, novelty
+            music, from performers such as Spike Jones and Stan Freberg. Mom
+            loved old time hymns and church choral music with vocal harmonies.
+          </p>
           <div className="spacer"></div>
         </div>
 
