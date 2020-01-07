@@ -1,0 +1,26 @@
+.icon {
+  background: gray;
+  border-radius: 15px;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  height: 30px;
+  margin: 3px;
+  padding: 3px 4px;
+  text-align: center;
+  width: 30px;
+}
+
+.icon:hover {
+  background: lightgray;
+}
+
+.socialIcons {
+  display: inline-block;
+}
+
+.socialIconLink,
+.socialIconLink:hover {
+  color: black;
+  text-decoration: none;
+}
