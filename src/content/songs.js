@@ -1,10 +1,9 @@
-export const DEFAULT_SONG = "he-punahele";
+export const DEFAULT_SONG = "aloha-week-hula";
 
 export const hawaiian = {
   "Aloha Week Hula": "aloha-week-hula",
   "Blue Hawaiian Moonlight": "blue-hawaiian-moonlight",
   "Hanalei Moon": "hanalei-moon",
-  "He Punahele": "he-punahele",
   "Hi'ilawe": "hiilawe",
   "Hula Breeze": "hula-breeze",
   Kainoa: "kainoa",
@@ -28,7 +27,6 @@ export const composed = {
   "Got to Move Forward": "05-got-to-move-forward",
   "In This Light You Look Like a Friend of Mine":
     "in-this-light-you-look-like-a-friend-of-mine",
-  "I Remember Growing Up on the Farm": "06-i-remember-growing-up-on-the-farm",
   "Old Folks Tell Their Stories v. 1": "08-old-folks-tell-their-stories",
   "Old Folks Tell Their Stories v. 2": "the-old-folks-tell-their-stories",
   "Picnic v. 1": "01-picnic",
