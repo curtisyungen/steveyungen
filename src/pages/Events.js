@@ -3,7 +3,6 @@ import Photo from "../components/Photo/photo";
 import alohaFriday from "../images/events/Aloha-Friday-SJY-11-17-2017.jpg";
 import sosaPoster from "../images/events/sosa-poster.jpg";
 import rollingStone from "../images/events/rolling-stone.jpg";
-import SteveSOSACutOut from "../images/steve/steve-sosa-cutout-remove-logo.png";
 import "./Events.css";
 
 const upcomingEvents = [];
@@ -13,13 +12,6 @@ const photoStyle = {
   marginBottom: "10px",
   maxHeight: "350px",
   maxWidth: "100%"
-};
-
-const cutoutStyle = {
-  bottom: "0",
-  left: "0",
-  position: "absolute",
-  zIndex: "-1"
 };
 
 class Events extends Component {
@@ -50,11 +42,8 @@ class Events extends Component {
             </div>
           ))}
         </div>
-        <div className="spacer" />
 
-        <div className="steve-sosa-cutout">
-          <Photo image={SteveSOSACutOut} style={cutoutStyle} />
-        </div>
+        <div className="steve-sosa-cutout" />
       </div>
     );
   }

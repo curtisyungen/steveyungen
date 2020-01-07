@@ -7,15 +7,26 @@
 }
 
 .steve-sosa-cutout {
-  margin-bottom: -16px;
-}
-
-.steve-sosa-cutout img {
+  background-image: url("https://res.cloudinary.com/curtiscdn/image/fetch/http://u.cubeupload.com/curtisyungen/stevesosacutoutremov.png");
+  background-size: cover;
+  bottom: 0px;
+  height: 700px;
+  left: 0;
   max-height: 100%;
   max-width: 35%;
+  position: absolute;
+  width: 350px;
+  z-index: -1;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 991px) {
+  .steve-sosa-cutout {
+    max-height: 70%;
+    max-width: 26%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
   .steve-sosa-cutout {
     display: none;
   }
