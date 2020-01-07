@@ -20,11 +20,13 @@
 
 .donatePrompt {
   margin: auto;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
+  margin-top: 0px;
 }
 
 .leaveATip {
-  box-shadow: 0 0 15px #ff7700;
+  border-radius: 4px;
+  box-shadow: 0 0 4px 2px #ff7700;
   margin: auto;
   max-width: 500px;
   padding: 8px;
@@ -32,6 +34,7 @@
 }
 
 .likeThisSong {
+  box-shadow: 0 0 15px #ff7700;
   border-radius: 50px;
   cursor: pointer;
   font-size: 12px;
@@ -39,8 +42,10 @@
   margin: auto;
   padding-top: 18px;
   width: 100px;
+}
 
-  animation: pulse 3s infinite;
+.likeThisSong:hover {
+  box-shadow: 0 0 15px #ff4400;
 }
 
 .selected-false {

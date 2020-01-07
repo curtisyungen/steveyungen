@@ -84,7 +84,7 @@ class Music extends Component {
               Like this song?
             </div>
           ) : (
-            <div className="leaveATip fadeIn-3">
+            <div className="leaveATip fadeIn-fast">
               <p>Leave a tip!</p>
               <DonateBtns />
             </div>
