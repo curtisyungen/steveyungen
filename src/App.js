@@ -10,6 +10,18 @@ import Support from "./pages/Support";
 import ErrorPage from "./pages/ErrorPage";
 import Footer from "./components/Footer/footer";
 
+const craterLakePano = (new Image().src =
+  "https://res.cloudinary.com/curtiscdn/image/upload/v1578358423/crater-lake-pano_hjrnf8.jpg");
+const ocean = (new Image().src =
+  "https://res.cloudinary.com/curtiscdn/image/upload/v1578358425/ocean-1_tpwauj.jpg");
+const hawaii = (new Image().src =
+  "https://res.cloudinary.com/curtiscdn/image/upload/v1578358441/hawaii-green_hp4dmo.png");
+const oldStage = (new Image().src =
+  "https://res.cloudinary.com/curtiscdn/image/upload/v1578358441/hawaii-green_hp4dmo.png");
+const jville = (new Image().src = "./images/covers/jacksonville-pano.jpg");
+
+const covers = [craterLakePano, ocean, hawaii, oldStage, jville];
+
 class App extends Component {
   render() {
     return (
