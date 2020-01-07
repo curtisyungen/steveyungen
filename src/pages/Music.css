@@ -1,3 +1,5 @@
+@import "../styles/animations.css";
+
 .audio-section {
   position: relative;
 }
@@ -17,8 +19,28 @@
 }
 
 .donatePrompt {
+  margin: auto;
   margin-bottom: 50px;
-  margin-top: -15px;
+}
+
+.leaveATip {
+  box-shadow: 0 0 15px #ff7700;
+  margin: auto;
+  max-width: 500px;
+  padding: 8px;
+  width: auto;
+}
+
+.likeThisSong {
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 12px;
+  height: 100px;
+  margin: auto;
+  padding-top: 18px;
+  width: 100px;
+
+  animation: pulse 3s infinite;
 }
 
 .selected-false {

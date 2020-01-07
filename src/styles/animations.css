@@ -49,3 +49,51 @@
     opacity: 1;
   }
 }
+
+/* PULSATE */
+/* ============================ */
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0px #ff7700;
+  }
+  100% {
+    box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
+  }
+}
+
+@-moz-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0px #ff7700;
+  }
+  100% {
+    box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0px #ff7700;
+  }
+  100% {
+    box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
+  }
+}
+
+@-ms-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0px #ff7700;
+  }
+  100% {
+    box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
+  }
+}
+
+@-o-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0px #ff7700;
+  }
+  100% {
+    box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+  }
+}

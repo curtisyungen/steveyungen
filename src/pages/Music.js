@@ -77,20 +77,18 @@ class Music extends Component {
           <AudioPlayer title={title} autoPlay={autoPlay} />
         </div>
 
-        <div className="text-center">
-          <p className="donatePrompt">
-            {!askForTip ? (
-              <div onClick={this.toggleTip}>
-                <Logo image={Thumb} style={thumbStyle} />
-                Like this song?
-              </div>
-            ) : (
-              <div className="fadeIn-3">
-                <p>Leave a tip!</p>
-                <DonateBtns />
-              </div>
-            )}
-          </p>
+        <div className="donatePrompt text-center">
+          {!askForTip ? (
+            <div className="likeThisSong" onClick={this.toggleTip}>
+              <Logo image={Thumb} style={thumbStyle} />
+              Like this song?
+            </div>
+          ) : (
+            <div className="leaveATip fadeIn-3">
+              <p>Leave a tip!</p>
+              <DonateBtns />
+            </div>
+          )}
         </div>
 
         <div className="row row-style justify-content-center text-center ">
