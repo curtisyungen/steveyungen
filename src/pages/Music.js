@@ -28,13 +28,55 @@ class Music extends Component {
     this.state = {
       title: DEFAULT_SONG,
       autoPlay: false,
-      askForTip: false
+      askForTip: false,
+      screenWidth: null,
+      mobilize: false
     };
   }
 
-  setTitle = title => {
+  componentDidMount = () => {
+    window.addEventListener("resize", this.getScreenWidth.bind(this));
+    window.addEventListener("scroll", this.toggleMobilizer.bind(this));
+
+    this.getScreenWidth();
+  };
+
+  getScreenWidth = () => {
+    let screenWidth =
+      window.innerWidth ||
+      document.documentElement.clientWidth ||
+      document.body.clientWidth;
+
+    this.setState(
+      {
+        screenWidth
+      },
+      () => {
+        this.toggleMobilizer();
+      }
+    );
+  };
+
+  toggleMobilizer = () => {
+    let { screenWidth, mobilize } = this.state;
+
+    let audio = document
+      .getElementById("audio-section")
+      .getBoundingClientRect();
+
+    let scrollY = window.scrollY;
+    let diffY = scrollY - audio.y;
+
+    if (screenWidth > 768) {
+      mobilize = false;
+    } else if (screenWidth <= 768 && diffY > 300) {
+      mobilize = true;
+    } else {
+      mobilize = false;
+    }
+
     this.setState({
-      title
+      mobilize
     });
   };
 
@@ -50,8 +92,14 @@ class Music extends Component {
     });
   };
 
+  setTitle = title => {
+    this.setState({
+      title
+    });
+  };
+
   render() {
-    const { title, autoPlay, askForTip } = this.state;
+    const { title, autoPlay, askForTip, mobilize } = this.state;
     return (
       <div className="container music-container">
         <div className="row row-style justify-content-center text-center">
@@ -66,7 +114,12 @@ class Music extends Component {
           <div className="spacer"></div>
         </div>
 
-        <div className="row row-style justify-content-center text-center audio-section">
+        <div
+          id="audio-section"
+          className={`row row-style justify-content-center text-center audio-section ${
+            mobilize === true ? "mobilize" : ""
+          }`}
+        >
           <div className="autoPlaySwitch">
             <p className="autoPlayLabel">AUTOPLAY</p>
             <label class="switch">
@@ -85,7 +138,7 @@ class Music extends Component {
             </div>
           ) : (
             <div className="leaveATip fadeIn-fast">
-              <p>Leave a tip!</p>
+              <p className="description">Leave a tip!</p>
               <DonateBtns />
             </div>
           )}

@@ -2,11 +2,11 @@ import React, { Component } from "react";
 import Photo from "../components/Photo/photo";
 import alohaFriday from "../images/events/Aloha-Friday-SJY-11-17-2017.jpg";
 import sosaPoster from "../images/events/sosa-poster.jpg";
-import rollingStone from "../images/events/rolling-stone.jpg";
+// import rollingStone from "../images/events/rolling-stone.jpg";
 import "./Events.css";
 
 const upcomingEvents = [];
-const pastEvents = [alohaFriday, sosaPoster, rollingStone];
+const pastEvents = [alohaFriday, sosaPoster];
 
 const photoStyle = {
   border: "1px solid black",
@@ -44,7 +44,7 @@ class Events extends Component {
           ))}
         </div>
 
-        {/* <div className="steve-sosa-cutout" /> */}
+        <div className="steve-sosa-cutout" />
       </div>
     );
   }

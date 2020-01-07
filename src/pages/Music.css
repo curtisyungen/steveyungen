@@ -127,10 +127,35 @@ input:checked + .slider:before {
   -ms-transform: translateX(26px);
 }
 
+.mobilize {
+  background: green;
+  border-bottom: 1px solid #303030;
+  left: 0px;
+  margin: 0px;
+  max-width: 100%;
+  padding: 10px 10px;
+  padding-bottom: 0px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 99;
+}
+
 .slider.round {
   border-radius: 34px;
 }
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .audio-section {
+    margin: auto;
+  }
+
+  .music-container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
