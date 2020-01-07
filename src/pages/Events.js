@@ -9,6 +9,7 @@ const upcomingEvents = [];
 const pastEvents = [alohaFriday, sosaPoster, rollingStone];
 
 const photoStyle = {
+  border: "1px solid black",
   marginBottom: "10px",
   maxHeight: "350px",
   maxWidth: "100%"

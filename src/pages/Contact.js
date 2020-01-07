@@ -34,6 +34,7 @@ class Contact extends Component {
           >
             <div className="form-group">
               <input
+                autoComplete="off"
                 name="name"
                 type="text"
                 className="form-control"
@@ -44,6 +45,7 @@ class Contact extends Component {
             </div>
             <div className="form-group">
               <input
+                autoComplete="off"
                 name="email"
                 type="email"
                 className="form-control"
