@@ -22,6 +22,7 @@
   margin: auto;
   margin-bottom: 10px;
   margin-top: 0px;
+  padding-bottom: 5px;
 }
 
 .leaveATip {
@@ -40,12 +41,17 @@
   font-size: 12px;
   height: 100px;
   margin: auto;
+  margin-bottom: 5px;
   padding-top: 18px;
   width: 100px;
 }
 
 .likeThisSong:hover {
   box-shadow: 0 0 15px #ff4400;
+}
+
+.placeholder-true {
+  height: 380px;
 }
 
 .selected-false {
@@ -157,6 +163,10 @@ input:checked + .slider:before {
 @media only screen and (max-width: 1200px) {
   .audio-section {
     margin: auto;
+  }
+
+  .autoPlaySwitch {
+    margin-bottom: 0px;
   }
 
   .music-container {

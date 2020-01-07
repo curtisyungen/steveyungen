@@ -69,7 +69,7 @@ class Music extends Component {
 
     if (screenWidth > 768) {
       mobilize = false;
-    } else if (screenWidth <= 768 && diffY > 300) {
+    } else if (screenWidth <= 768 && diffY > 750) {
       mobilize = true;
     } else {
       mobilize = false;
@@ -114,32 +114,35 @@ class Music extends Component {
           <div className="spacer"></div>
         </div>
 
-        <div
-          id="audio-section"
-          className={`row row-style justify-content-center text-center audio-section mobilize-${mobilize}`}
-        >
-          <div className="autoPlaySwitch">
-            <p className="autoPlayLabel">AUTOPLAY</p>
-            <label className="switch">
-              <input type="checkbox" onChange={this.toggleAutoPlay} />
-              <span className="slider round" />
-            </label>
+        <div className={`row placeholder-${mobilize}`} />
+        <div className={`mobilize  mobilize-${mobilize}`}>
+          <div
+            id="audio-section"
+            className={`row row-style justify-content-center text-center audio-section`}
+          >
+            <div className="autoPlaySwitch">
+              <p className="autoPlayLabel">AUTOPLAY</p>
+              <label className="switch">
+                <input type="checkbox" onChange={this.toggleAutoPlay} />
+                <span className="slider round" />
+              </label>
+            </div>
+            <AudioPlayer title={title} autoPlay={autoPlay} />
           </div>
-          <AudioPlayer title={title} autoPlay={autoPlay} />
-        </div>
 
-        <div className="donatePrompt text-center">
-          {!askForTip ? (
-            <div className="likeThisSong" onClick={this.toggleTip}>
-              <Logo image={Thumb} style={thumbStyle} />
-              Like this song?
-            </div>
-          ) : (
-            <div className="leaveATip fadeIn-fast">
-              <p className="description">Leave a tip!</p>
-              <DonateBtns />
-            </div>
-          )}
+          <div className="donatePrompt text-center">
+            {!askForTip ? (
+              <div className="likeThisSong" onClick={this.toggleTip}>
+                <Logo image={Thumb} style={thumbStyle} />
+                Like this song?
+              </div>
+            ) : (
+              <div className="leaveATip fadeIn-fast">
+                <p className="description">Leave a tip!</p>
+                <DonateBtns />
+              </div>
+            )}
+          </div>
         </div>
 
         <div className="row row-style justify-content-center text-center ">
