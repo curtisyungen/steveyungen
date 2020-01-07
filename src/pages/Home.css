@@ -46,10 +46,11 @@ body {
   animation: fadein 3s;
 }
 
+.contact-container,
+.events-container,
 .gallery-container,
 .home-container,
-.music-container,
-.events-container {
+.music-container {
   font-family: "Cabin", "sans-serif";
   padding: 40px 60px !important;
 

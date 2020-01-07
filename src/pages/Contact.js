@@ -23,9 +23,8 @@ class Contact extends Component {
     return (
       <div className="container contact-container">
         <div className="contact">
-          <div className="justify-content-center text-center aboutMusic">
+          <div className="justify-content-center text-center contactTitle">
             <p className="title large-title">CONTACT STEVE</p>
-            <div className="spacer"></div>
           </div>
 
           <form
