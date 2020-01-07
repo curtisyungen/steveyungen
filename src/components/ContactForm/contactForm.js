@@ -10,9 +10,26 @@ class ContactForm extends Component {
       userName: "",
       email: "",
       message: "",
-      goHome: false
+      goHome: false,
+      load: 0
     };
   }
+
+  componentDidMount = () => {
+    this.getFormLoad();
+  };
+
+  getFormLoad = () => {
+    let { load } = this.state;
+    document.getElementById("mG61Hd").onload = function() {
+      load += 1;
+      if (load > 1) {
+        this.setState({
+          goHome: true
+        });
+      }
+    };
+  };
 
   handleInputChange = event => {
     const { name, value } = event.target;
@@ -38,11 +55,9 @@ class ContactForm extends Component {
   };
 
   redirectToHome = () => {
-    setTimeout(() => {
-      this.setState({
-        goHome: true
-      });
-    }, 1000);
+    this.setState({
+      goHome: true
+    });
   };
 
   render() {
@@ -56,12 +71,13 @@ class ContactForm extends Component {
           id="mG61Hd"
         >
           <div className="form-field">
-            <label>Name</label>
+            <label>Name *</label>
             <input
               className="contactInput"
               name="entry.1919979108"
               type="text"
               defaultValue={name}
+              required
               onChange={this.handleInputChange}
             />
           </div>
