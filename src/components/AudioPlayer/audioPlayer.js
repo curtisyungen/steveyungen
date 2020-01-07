@@ -11,7 +11,7 @@ class AudioPlayer extends Component {
           allow="autoplay"
           height="300"
           width="100%"
-          src={`https://w.soundcloud.com/player/?url=https://soundcloud.com/steve-yungen/${title}&auto_play=${autoPlay}&show_artwork=false&show_soundcloud_overlay=false`}
+          src={`https://w.soundcloud.com/player/?url=https://soundcloud.com/steve-yungen/${title}&auto_play=${autoPlay}&show_artwork=false&hide_related=true`}
         ></iframe>
       </div>
     );
