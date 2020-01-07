@@ -3,7 +3,7 @@ import "./audioPlayer.css";
 
 class AudioPlayer extends Component {
   render() {
-    const { title } = this.props;
+    const { title, autoPlay } = this.props;
     return (
       <div className="iframe-container">
         <iframe
@@ -11,7 +11,7 @@ class AudioPlayer extends Component {
           allow="autoplay"
           height="300"
           width="100%"
-          src={`https://w.soundcloud.com/player/?url=https://soundcloud.com/steve-yungen/${title}&auto_play=false&show_artwork=false`}
+          src={`https://w.soundcloud.com/player/?url=https://soundcloud.com/steve-yungen/${title}&auto_play=${autoPlay}&show_artwork=false`}
         ></iframe>
       </div>
     );

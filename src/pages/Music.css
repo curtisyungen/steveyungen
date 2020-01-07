@@ -1,3 +1,21 @@
+.audio-section {
+  position: relative;
+}
+
+.autoPlayLabel {
+  display: inline-block;
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+.autoPlaySwitch {
+  margin: 0px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  text-align: right;
+  width: 100%;
+}
+
 .selected-false {
   color: black;
 }
@@ -20,4 +38,67 @@
 
 .songList {
   display: inline-block;
+}
+
+/* SLIDER CSS */
+/* =========================================== */
+
+.switch {
+  display: inline-block;
+  height: 34px;
+  padding: 4px;
+  position: relative;
+  width: 60px;
+}
+
+.switch input {
+  height: 0;
+  opacity: 0;
+  width: 0;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+}
+
+.slider:before {
+  background-color: white;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+  -webkit-transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #ff7700;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #ff7700;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }

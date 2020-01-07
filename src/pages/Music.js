@@ -15,7 +15,8 @@ class Music extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      title: DEFAULT_SONG
+      title: DEFAULT_SONG,
+      autoPlay: false
     };
   }
 
@@ -25,8 +26,14 @@ class Music extends Component {
     });
   };
 
+  toggleAutoPlay = () => {
+    this.setState({
+      autoPlay: !this.state.autoPlay
+    });
+  };
+
   render() {
-    const { title } = this.state;
+    const { title, autoPlay } = this.state;
     return (
       <div className="container music-container">
         <div className="row row-style justify-content-center text-center">
@@ -41,8 +48,19 @@ class Music extends Component {
           <div className="spacer"></div>
         </div>
 
-        <div className="row row-style justify-content-center text-center ">
-          <AudioPlayer title={title} />
+        <div className="row row-style justify-content-center text-center audio-section">
+          <div className="autoPlaySwitch">
+            <p className="autoPlayLabel">AUTOPLAY</p>
+            <label class="switch">
+              <input type="checkbox" onChange={this.toggleAutoPlay} />
+              <span class="slider round" />
+            </label>
+          </div>
+          <AudioPlayer title={title} autoPlay={autoPlay} />
+        </div>
+
+        <div className="row justify-content-center text-center">
+          Like this song? Donate bitch!
         </div>
         <div className="row row-style justify-content-center text-center ">
           <SongList

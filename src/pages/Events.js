@@ -44,7 +44,7 @@ class Events extends Component {
           ))}
         </div>
 
-        <div className="steve-sosa-cutout" />
+        {/* <div className="steve-sosa-cutout" /> */}
       </div>
     );
   }
