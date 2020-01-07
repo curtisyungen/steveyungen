@@ -7,6 +7,7 @@ import GalleryImage from "../images/steve/steve-1979.jpg";
 import SoundCloudLogo from "../images/logos/soundcloud.svg";
 import YouTubeLogo from "../images/logos/youtube.svg";
 import FacebookLogo from "../images/logos/facebook.svg";
+import steveCleveland from "../images/steve/steve-cleveland.jpg";
 import "./Home.css";
 
 const photoStyle = {
@@ -20,6 +21,12 @@ const logoStyle = {
   cursor: "pointer",
   marginTop: "35px",
   maxHeight: "80px",
+  maxWidth: "100%"
+};
+
+const clevelandStyle = {
+  border: "1px solid black",
+  maxHeight: "700px",
   maxWidth: "100%"
 };
 
@@ -125,7 +132,10 @@ class Home extends Component {
 
         <div className="row row-style justify-content-center text-center">
           <div className="col-sm-12 spacer" />
-          <div className="col-md-12">Row 3 Col 1</div>
+          <div className="col-md-12">
+            <Photo image={steveCleveland} style={clevelandStyle} />
+          </div>
+          <div className="col-sm-12 spacer-small" />
         </div>
       </div>
     );

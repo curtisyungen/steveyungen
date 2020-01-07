@@ -46,7 +46,7 @@ body {
 }
 
 hr {
-  background: #303030;
+  background: rgb(212, 212, 212);
 }
 
 .large-title {
@@ -60,6 +60,10 @@ hr {
 
 .spacer {
   height: 68px;
+}
+
+.spacer-small {
+  height: 30px;
 }
 
 .tipJar-container {
@@ -87,5 +91,9 @@ hr {
 
   .spacer {
     height: 38px;
+  }
+
+  .spacer-small {
+    height: 3px;
   }
 }
