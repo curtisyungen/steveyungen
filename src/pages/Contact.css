@@ -6,17 +6,34 @@
   text-align: center;
 }
 
+.contact-container {
+  padding: 0px !important;
+}
+
 .contactForm {
-  margin: 15px auto;
-  max-width: 500px;
+  left: 0;
+  max-height: 800px;
+  max-width: 100%;
+  min-height: 706px;
+  min-width: 100%;
+  position: absolute;
+  top: -40px;
+}
+
+.contactFormWrapper {
+  background: gray;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  margin: auto;
+  margin-bottom: 50px;
+  min-height: 500px;
+  min-width: 500px;
+  overflow: hidden;
+  padding: 0px;
+  position: relative;
+  width: 640px;
 }
 
 .contactTitle {
   margin-bottom: 40px;
-}
-
-@media only screen and (max-width: 420px) {
-  .contactForm {
-    max-width: 100%;
-  }
 }

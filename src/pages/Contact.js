@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ContactForm from "../components/ContactForm/contactForm";
 import "./Contact.css";
 
 class Contact extends Component {
@@ -27,46 +28,7 @@ class Contact extends Component {
             <p className="title large-title">CONTACT STEVE</p>
           </div>
 
-          <form
-            className="contactForm"
-            method="POST"
-            action="/submitContactForm"
-          >
-            <div className="form-group">
-              <input
-                autoComplete="off"
-                name="name"
-                type="text"
-                className="form-control"
-                id="nameInput"
-                placeholder="Your name"
-                onChange={this.handleInputChange}
-              />
-            </div>
-            <div className="form-group">
-              <input
-                autoComplete="off"
-                name="email"
-                type="email"
-                className="form-control"
-                id="emailInput"
-                placeholder="Your email"
-                onChange={this.handleInputChange}
-              />
-            </div>
-            <div className="form-group">
-              <textarea
-                className="form-control"
-                id="messageInput"
-                placeholder="Your message"
-                onChange={this.handleInputChange}
-                rows="3"
-              ></textarea>
-            </div>
-            <button type="submit" className="btn btn-primary">
-              Send Message
-            </button>
-          </form>
+          <ContactForm />
         </div>
       </div>
     );
