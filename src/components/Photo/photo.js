@@ -75,7 +75,11 @@ class Photo extends Component {
 
     return (
       <Fragment>
-        <a href={link} className="photo fadeIn-fast" target={target}>
+        <a
+          href={link}
+          className={`photo fadeIn-fast modal-${hasModal}`}
+          target={target}
+        >
           <img
             src={image}
             style={this.props.style}

@@ -24,10 +24,13 @@
   width: 100%;
 }
 
+.modal-true {
+  cursor: pointer;
+}
+
 .photo,
 .photo:hover {
   color: black;
-  cursor: pointer;
   text-decoration: none;
   word-wrap: break-word;
 }

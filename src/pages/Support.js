@@ -27,7 +27,7 @@ class TipJar extends Component {
         <div className="spacer"></div>
         <div className="row row-style justify-content-center text-center">
           <div className="col-xs-12 col-md-4">
-            <Photo image={tipJarImg} style={photoStyle} hasModal />
+            <Photo image={tipJarImg} style={photoStyle} />
           </div>
         </div>
       </div>
