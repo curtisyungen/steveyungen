@@ -16,13 +16,13 @@ class Gallery extends Component {
     return (
       <div className="container gallery-container">
         {/* PHOTOS */}
-        <div className="row row-style justify-content-center text-center aboutMusic">
+        <div className="row row-style justify-content-center text-center">
           <p className="title large-title">PHOTOS</p>
           <p className="description">{aboutGallery}</p>
-          <div className="spacer"></div>
+          <div className="spacer" />
         </div>
 
-        <div className="row justify-content-center text-center ">
+        <div className="row justify-content-center text-center m-3">
           {Object.keys(galleryImages).map(image => (
             <div key={image} className="col-sm-8 col-md-4 col-xl-2">
               <Photo
@@ -38,10 +38,10 @@ class Gallery extends Component {
         </div>
 
         {/* VIDEOS */}
-        <div className="row row-style justify-content-center text-center aboutMusic">
-          <div className="spacer"></div>
+        <div className="row row-style justify-content-center text-center mt-5 mb-4">
+          <div className="spacer" />
           <p className="title large-title">VIDEOS</p>
-          <div className="spacer"></div>
+          <div className="spacer" />
         </div>
 
         {/* ROW 1 */}
