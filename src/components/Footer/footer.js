@@ -10,6 +10,9 @@ class Footer extends Component {
         <div className="footer-inner">
           <SocialIcons />
           <ScrollTop />
+          <div className="coverCredit">
+            Cover photo by Karen Irmscher.
+          </div>
           <div className="copyright">
             Copyright &copy; 2020 Steve Yungen. All rights reserved.
           </div>
