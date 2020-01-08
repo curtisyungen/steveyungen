@@ -1,7 +1,8 @@
 .jumbotron {
   background: black;
   background-attachment: scroll;
-  background-image: url("https://res.cloudinary.com/curtiscdn/image/fetch/http://u.cubeupload.com/curtisyungen/stevecoversmall.png");
+/*   background-image: url("https://res.cloudinary.com/curtiscdn/image/fetch/http://u.cubeupload.com/curtisyungen/stevecoversmall.png"); */
+  background-image: url("../../images/steve/steve-cover-with-credit.png");
   background-position: left center;
   background-repeat: no-repeat;
   background-size: contain;
