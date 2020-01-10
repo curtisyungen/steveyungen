@@ -145,7 +145,7 @@ class Music extends Component {
           </div>
         </div>
 
-        <div className="row row-style justify-content-center text-center ">
+        <div className="row row-style justify-content-center text-center songListRow">
           <SongList
             listTitle={"Hawaiian"}
             list={hawaiian}
