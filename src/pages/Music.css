@@ -78,6 +78,10 @@
   display: inline-block;
 }
 
+.songListRow {
+  margin-left: 0px !important; 
+}
+
 /* SLIDER CSS */
 /* =========================================== */
 
