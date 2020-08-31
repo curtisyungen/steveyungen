@@ -49,23 +49,23 @@ class Gallery extends Component {
         {/* ROW 1 */}
         <div className="row video-row justify-content-center text-center">
           <div className="col-xs-8 col-md-6">
-            <Video video={"https://www.youtube.com/embed/xEYHfnU0Z9o?rel=0"} />
+            <Video video={"https://www.youtube.com/embed/726hKa5MnAg"} />
           </div>
           <div className="col-xs-8 col-md-6">
-            <Video video={"https://www.youtube.com/embed/tgwyTx6I6sY"} />
+            <Video video={"https://www.youtube.com/embed/P3s9dW91KB4"} />
           </div>
         </div>
 
         {/* ROW 2 */}
         <div className="row video-row justify-content-center text-center">
           <div className="col-xs-8 col-md-6">
-            <Video video={"https://www.youtube.com/embed/P3s9dW91KB4"} />
+            <Video video={"https://www.youtube.com/embed/xEYHfnU0Z9o?rel=0"} />
           </div>
           <div className="col-xs-8 col-md-6">
-            <Video video={"https://www.youtube.com/embed/ekyh20VfSoY"} />
+            <Video video={"https://www.youtube.com/embed/tgwyTx6I6sY"} />
           </div>
         </div>
-
+        
         {/* ROW 3 */}
         <div className="row video-row justify-content-center text-center">
           <div className="col-xs-8 col-md-6">
